@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería de Imágenes</title>
+    <style>
+        table {
+            width: 100%;
+            text-align: center;
+            border: 2px solid ;
+        }
+        img {
+            width: 300px;
+            height: 200px;
+            cursor: pointer;
+            border: 2px solid;
+        }
+        img:hover {
+            border-color: #333;
+        }
+        iframe {
+            width: 100%;
+            height: 400px;
+            border: 2px solid #000;
+            margin-top: 20px;
+        }
+    </style>
+    <script>
+        function mostrarImagen(src) {
+            document.getElementById("visor").src = src;
+        }
+    </script>
+</head>
+<body>
+    <h2>Las 7 maravillas del mundo antiguo en el pasado</h2>
+    <table border="1">
+        <tr>
+            <td><img src="https://www.worldhistory.org/img/r/p/500x600/5687.jpg?v=1738643775" onclick="mostrarImagen(this.src)"></td>
+            <td><img src="https://img.freepik.com/fotos-premium/jardines-colgantes-babilonia-siete-maravillas-mundo-antiguo-fantasia_962764-193727.jpg" onclick="mostrarImagen(this.src)"></td>
+            <td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPeRkVYxrwcOZRfDJwOhhGZKfqMZCm1tnMOQ&s" onclick="mostrarImagen(this.src)"></td>
+            <td><img src="https://historia.nationalgeographic.com.es/medio/2019/05/07/7-maravillas-faro-alejandria-antes_809e63ba_1400x788.jpg" onclick="mostrarImagen(this.src)"></td>
+        </tr>
+        <tr>
+            <td><img src="https://historia.nationalgeographic.com.es/medio/2019/05/20/06-seven-wonders-olympia_df87f173_1200x630.jpg" onclick="mostrarImagen(this.src)"></td>
+            <td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZSzPY0rLCSn14pEp--uVGVSi-t5vWjcVvBO5giNrI-Xs0Z3dwynQVPi6wNHoYowngev0&usqp=CAU" onclick="mostrarImagen(this.src)"></td>
+            <td><img src="https://historia.nationalgeographic.com.es/medio/2019/05/07/7-maravillas-coloso-rodas-antes_f9c8f9d9_1400x788.jpg" onclick="mostrarImagen(this.src)"></td>
+             <td><img src="https://curiosfera-historia.com/wp-content/uploads/cuales-eran-las-7-maravillas-del-mundo.jpg" onclick="mostrarImagen(this.src)"></td>
+        </tr>
+    
+    </table>
+    <iframe id="visor" src="https://www.nationalgeographicla.com/historia/2024/06/cuales-fueron-las-7-maravillas-del-mundo-antiguo" frameborder="0"></iframe>
+</body>
+</html>
