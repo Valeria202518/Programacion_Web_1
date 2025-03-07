@@ -1,0 +1,30 @@
+body{
+	background-color: #53dbf6;
+}
+table{
+	width: 100%;
+	border: 2px solid #002a2a;
+	border-collapse: collapse;
+	caption-side: top;
+}
+td,th{
+	border: 2px solid #002a2a;
+}
+/*fondo filas impares*/
+table tr:nth-child(odd){
+background-color: white;
+}
+/*fondo filas pares*/
+table tr:nth-child(even){
+	background-color: #46f5a5;
+}
+
+table tr th{
+	background-color: black;
+	color: white;
+}
+
+table tr:hover{
+	background-color: #0e84d0;
+	color: white;
+}
