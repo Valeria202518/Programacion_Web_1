@@ -1,0 +1,63 @@
+.capa1{
+	margin-left: 25%;
+	padding: 12px;
+}
+
+ul{
+	list-style-type: none;
+	width:22%;
+	margin: 0px;
+	padding: 0px;
+	height: 80%;
+	background-color: #af83f2;
+	position: fixed;
+}
+
+li a{
+	background-color: #af83f2;
+	color: white;
+	display:block;
+	padding: 16px;
+	text-decoration: none;
+}
+
+li a:hover{
+	background-color: #0e7dfa;
+}
+li .activo{
+	background-color: blueviolet;
+	color: white;
+}
+h1{
+  font-family: "Henny Penny", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h2{
+font-family: "Oldenburg", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face{
+	font-family: "Satisfy";
+	src: url(Satisfy/Satisfy-Regular.ttf)
+	format("truetype");
+}
+@font-face{
+	
+	font-family: "Merriweather";
+	src: url(Merriweather/Merriweather-Italic-VariableFont_opsz,wdth,wght.ttf)
+	format("truetype");
+}
+p{
+	font-family: Satisfy;
+	font-size: 20px;
+	text-align: justify;
+}
+
+.t2{
+	font-family: Merriweather;
+	font-size: 20px;
+	text-align: justify;
+}
