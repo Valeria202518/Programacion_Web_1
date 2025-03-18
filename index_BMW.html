@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="https://kit.fontawesome.com/1fe8e256d4.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" type="text/css" href="estilos1.css">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>BMW</title>
+</head>
+<body>
+	<header class="header">
+		<div class="logo">
+			<img src="logo_bmw.png">
+		</div>
+		<nav class="nav-links">
+			<ul>
+				<li><a href="#historia">Historia</a></li>
+				<li><a href="#mision">Misión y valores</a></li>
+				<li><a href="#modelos">Modelos</a></li>
+				<li><a href="#politicas">Politicas</a></li>
+				<li><a href="#contactanos">Contactanos</a></li>
+			</ul>
+		</nav>
+
+		<div class="botones">
+			<a href="https://valeria202518.github.io/Programacion_Web_1/sesion" class="boton"><button>Sing in</button></a>
+			<a href="https://valeria202518.github.io/Programacion_Web_1/registro" class="boton"><button>Register</button></a>
+		</div>
+	</header>
+
+	<header class="header2">
+		<h1>BMW</h1>
+		<h2>Autos</h2>
+			<div class="buscar">
+		<input type="text" name="buscar" required>
+		<div class="btn">
+			<i class="fa-solid fa-magnifying-glass"></i>
+		</div>
+	</div>
+
+	</header>
+
+	<section class="carrusel">
+		<ul>
+			<li>
+				<img src="BMW_i4.jpg">
+				<div class="text">
+					<h2>BMW i4</h2>
+				</div>
+			</li>
+			<li>
+				<img src="BMW_ix2.png">
+				<div class="text">
+					<h2>BMW iX2</h2>
+				</div>
+			</li>
+			<li>
+				<img src="BMW_3.jpg">
+				<div class="text">
+					<h2>BMW serie 3</h2>
+				</div>
+			</li>
+			<li>
+				<img src="BMW_320.jpg">
+				<div class="text">
+					<h2>BMW 320</h2>
+				</div>
+			</li>
+
+		</ul>
+	</section>
+	<section>
+		<div id="historia" class="historia">
+			<h3>Historia</h3>
+
+			<p style="text-align: center; font-size: 20px; padding: 25px;">BMW (Bayerische Motoren Werke AG) es una de las marcas automotrices más prestigiosas del mundo. Su historia se remonta a principios del siglo XX y ha estado marcada por la innovación, la ingeniería de precisión y la evolución del diseño. La empresa se fundó en 1916 en Múnich, Alemania, inicialmente fabricando motores de avión. Tras la Primera Guerra Mundial, se diversificó en motocicletas y automóviles. En los años 30 y 40, BMW produjo autos deportivos y motores de aviación, pero tras la Segunda Guerra Mundial, sufrió restricciones y crisis. En los años 50 y 60, revivió con la "Neue Klasse", estableciendo su identidad deportiva. Durante los 70 y 80, BMW lanzó la Serie 3, Serie 5 y Serie 7, además de la icónica división M (BMW M3, M5). En los 90 y 2000, expandió su presencia global y adquirió MINI y Rolls-Royce.En el siglo XXI, se enfocó en tecnología, digitalización y electrificación con modelos como el BMW i3, iX y i4, consolidándose como una marca líder en el sector premium.</p>
+
+		<div class="carousel-container">
+        <div class="carousel">
+            <img src="https://img.remediosdigitales.com/b78551/p90094334_highres_bmw-begins-automotiv/1366_2000.jpg" alt="Imagen 1">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxRGrmx971tGtS0uCrCgDVHSQi2QkvV_3kYg&s" alt="Imagen 2">
+            <img src="https://www.bmw.es/content/dam/bmw/marketES/bmw_es/Topics/MundoBMW/historia-bmw/bmw-classic.jpg.resource.1373901354967.jpg" alt="Imagen 3">
+            <img src="https://img.remediosdigitales.com/b78551/p90094334_highres_bmw-begins-automotiv/1366_2000.jpg" alt="Imagen 1">
+          
+        </div>
+        <div class="buttons">
+            <button onclick="moveSlide(-1)">&#10094;</button>
+            <button onclick="moveSlide(1)">&#10095;</button>
+        </div>
+    </div>
+
+    <script>
+        let index = 0;
+        const carousel = document.querySelector('.carousel');
+        const images = document.querySelectorAll('.carousel img');
+
+        function moveSlide(direction) {
+            index += direction;
+            if (index < 0) {
+                index = images.length - 1;
+            } else if (index >= images.length) {
+                index = 0;
+            }
+            carousel.style.transform = `translateX(${-index * 300}px)`;
+        }
+    </script>
+		<div id= "mision" class="mision">
+			<h3>Misión</h3>
+			<p style="text-align: center; font-size: 20px; padding: 25px;">La misión de BMW es ofrecer movilidad premium a través de productos y servicios innovadores, sostenibles y de alta calidad. Su enfoque se basa en la excelencia en ingeniería, el diseño innovador y la experiencia de conducción emocionante, manteniendo un compromiso con la sostenibilidad y la eficiencia.</p>
+
+        <h3>Valores de BMW</h3>
+  
+        <div>
+            <h2><span>🚀</span> Innovación</h2>
+            <p style="font-size: 20px">Constantemente desarrolla tecnologías avanzadas y soluciones innovadoras para la movilidad del futuro.</p>
+        </div>
+
+        <div>
+            <h2><span>🌱</span> Sostenibilidad</h2>
+            <p style="font-size: 20px">Se enfoca en reducir su huella de carbono con vehículos eléctricos y procesos de producción ecológicos.</p>
+        </div>
+
+        <div>
+            <h2><span>🔧</span> Calidad y Precisión</h2>
+            <p style="font-size: 20px">Compromiso con la excelencia en la fabricación y el rendimiento superior en cada vehículo.</p>
+        </div>
+
+        <div>
+            <h2><span>🏆</span> Orientación al Cliente</h2>
+            <p style="font-size: 20px">Diseña sus productos y servicios para brindar la mejor experiencia al usuario.</p>
+        </div>
+
+        <div>
+            <h2><span>🌍</span> Responsabilidad</h2>
+            <p style="font-size: 20px">Promueve la responsabilidad social y el respeto por el medio ambiente en todas sus operaciones.</p>
+        </div>
+
+        <div>
+            <h2><span>🏎️</span> Pasión por la Movilidad</h2>
+            <p style="font-size: 20px">Su lema "El placer de conducir" refleja su dedicación a crear experiencias de conducción emocionantes.</p>
+        </div>
+    </div>
+
+		</div>
+		<div id="modelos" class="modelos">
+			<h3>Modelos</h3>
+			 <iframe style="width: 600px; height: 600px; padding: 10px; margin-top: 30px" src="https://www.autocasion.com/marcas/bmw" title="Sitio Oficial de BMW"></iframe>
+		<section>
+	<div style="margin-left: 650px; margin-top: -600px;">
+    <form method="post" action="" 
+    enctype="text/plain">
+
+        <fieldset style="text-align: left; width: 450px; border-color: black">
+            <legend></legend>
+                <label for="modelo"><h6>Modelo:</h6></label>
+                <select id="modelo" name="modelo " style="height: 50px; width: 500px; font-size: 15px;">
+                <option>i4 - Berlina mediana o grande</option>
+                <option>4x4, SUV o pickup</option>
+                <option>Serie 1 - Pequeño </option>
+                <option>Serie 2 - Deportivo o coupé</option>
+                <option>Serie 2 - Monovolumen</option>
+                <option>Serie 3 - Berlina mediana o grande</option>
+                <option>iX Serie 3 - Familiar </option>
+                <option>Serie 4 - Descapotable o convertible </option>
+                <option>Serie 4 - Deportivo o coupé </option>
+                <option>Serie 5 - Berlina mediana o grande</option>
+                <option>Serie 7 - Berlina mediana o grande </option>
+                <option>Serie 8 - Deportivo o coupé </option>
+                <option>Serie 8 - Descapotable o convertible</option> 
+                </select>
+
+        <label for="colores" style="font-size: 20px;"><h6>Selecciona el Año</h6></label><br/> 
+        <input type="checkbox"/>2010 - 2012 <br/>
+        <input type="checkbox"/>2013 - 2015<br/>
+        <input type="checkbox"/>2015 - 2017<br/>
+        <input type="checkbox"/>2018 - 2020<br/>
+        <input type="checkbox"/>2021 - 2023<br/>
+        <input type="checkbox"/>2023 - 2025<br/></br>
+
+                    
+        <label for="colores" style="font-size: 20px;"><h6>Selecciona el Color</h6></label><br/>   
+        <input type="color" name="colores" id="colores" placeholder="Color" /><br/><br/>
+
+        <label for="comentarios" style="font-size: 20px;"><h6>Sugerencias:</h6></label></br>
+        <textarea style="width: 500px; height: 80px" name="comentarios" id="comentarios"></textarea></br>
+
+        <input type="submit" name="enviar" id="enviar" value="Enviar datos">
+        <input type="reset" name="borrar" id="borrar" value="Borrar datos">
+        
+        </fieldset>
+    </form>
+</div>
+</section>
+
+		</div>
+		<div id="politicas" class="politicas">
+			<h3>Politicas</h3>
+			    <h1>Políticas de la Empresa BMW</h1>
+    <p>BMW (Bayerische Motoren Werke AG) es una empresa alemana líder en la fabricación de automóviles y motocicletas de lujo, conocida por su enfoque en la innovación, calidad y sostenibilidad. A continuación, se describen algunas de las políticas clave que BMW ha implementado en diferentes áreas:</p>
+
+    <h2>1. Política de Sostenibilidad y Medio Ambiente</h2>
+    <p>BMW tiene un fuerte compromiso con la sostenibilidad y la protección del medio ambiente. Algunas de sus políticas incluyen:</p>
+    <ul>
+        <li><strong>Reducción de emisiones:</strong> BMW se ha comprometido a reducir las emisiones de CO₂ en toda su cadena de valor, incluyendo la producción, el uso de sus vehículos y el reciclaje.</li>
+        <li><strong>Movilidad eléctrica:</strong> La empresa está invirtiendo fuertemente en vehículos eléctricos e híbridos, con el objetivo de ofrecer una gama completa de vehículos electrificados.</li>
+        <li><strong>Producción sostenible:</strong> BMW utiliza energía renovable en sus plantas de producción y ha implementado procesos de fabricación más eficientes para minimizar el impacto ambiental.</li>
+        <li><strong>Reciclaje y economía circular:</strong> La empresa promueve el reciclaje de materiales y el uso de materias primas sostenibles en la fabricación de sus vehículos.</li>
+    </ul>
+
+    <h2>2. Política de Innovación y Tecnología</h2>
+    <p>BMW es reconocida por su enfoque en la innovación tecnológica. Algunas de sus políticas en esta área incluyen:</p>
+    <ul>
+        <li><strong>Desarrollo de vehículos autónomos:</strong> BMW está trabajando en tecnologías de conducción autónoma y sistemas de asistencia al conductor.</li>
+        <li><strong>Conectividad:</strong> La empresa integra sistemas de infoentretenimiento avanzados y soluciones de conectividad en sus vehículos.</li>
+        <li><strong>Investigación y desarrollo:</strong> BMW invierte significativamente en I+D para mantenerse a la vanguardia de la industria automotriz.</li>
+    </ul>
+
+    <h2>3. Política de Responsabilidad Social Corporativa (RSC)</h2>
+    <p>BMW tiene un fuerte compromiso con la responsabilidad social, que se refleja en:</p>
+    <ul>
+        <li><strong>Programas comunitarios:</strong> La empresa apoya iniciativas sociales y culturales en las comunidades donde opera.</li>
+        <li><strong>Diversidad e inclusión:</strong> BMW promueve la diversidad y la inclusión en su fuerza laboral, fomentando un entorno de trabajo equitativo.</li>
+        <li><strong>Educación y formación:</strong> La empresa ofrece programas de formación y desarrollo para sus empleados y colabora con instituciones educativas para fomentar el talento joven.</li>
+    </ul>
+
+    <h2>4. Política de Calidad</h2>
+    <p>BMW es conocida por su enfoque en la calidad y la excelencia en la fabricación. Sus políticas incluyen:</p>
+    <ul>
+        <li><strong>Control de calidad riguroso:</strong> La empresa implementa procesos de control de calidad en todas las etapas de producción.</li>
+        <li><strong>Satisfacción del cliente:</strong> BMW se esfuerza por superar las expectativas de los clientes a través de productos y servicios de alta calidad.</li>
+    </ul>
+
+    <h2>5. Política de Gobierno Corporativo</h2>
+    <p>BMW sigue principios de gobierno corporativo sólidos para garantizar la transparencia y la responsabilidad:</p>
+    <ul>
+        <li><strong>Cumplimiento normativo:</strong> La empresa cumple con todas las leyes y regulaciones aplicables en los países donde opera.</li>
+        <li><strong>Ética empresarial:</strong> BMW promueve un comportamiento ético en todos los niveles de la organización.</li>
+    </ul>
+
+    <h2>6. Política de Cadena de Suministro</h2>
+    <p>BMW trabaja con proveedores que comparten su compromiso con la sostenibilidad y la responsabilidad social:</p>
+    <ul>
+        <li><strong>Estándares éticos:</strong> La empresa exige que sus proveedores cumplan con estándares éticos y ambientales.</li>
+        <li><strong>Colaboración cercana:</strong> BMW colabora estrechamente con sus proveedores para garantizar la calidad y la sostenibilidad en toda la cadena de suministro.</li>
+    </ul>
+
+    <h2>7. Política de Seguridad y Salud Ocupacional</h2>
+    <p>BMW prioriza la seguridad y el bienestar de sus empleados:</p>
+    <ul>
+        <li><strong>Entornos de trabajo seguros:</strong> La empresa implementa medidas para garantizar la seguridad en el lugar de trabajo.</li>
+        <li><strong>Programas de bienestar:</strong> BMW ofrece programas de salud y bienestar para sus empleados.</li>
+    </ul>
+
+    <h2>8. Política de Transparencia y Comunicación</h2>
+    <p>BMW se esfuerza por mantener una comunicación clara y transparente con sus stakeholders:</p>
+    <ul>
+        <li><strong>Informes de sostenibilidad:</strong> La empresa publica informes anuales de sostenibilidad que detallan su desempeño ambiental y social.</li>
+        <li><strong>Diálogo con stakeholders:</strong> BMW mantiene un diálogo abierto con accionistas, empleados, clientes y comunidades.</li>
+    </ul>
+
+    <p>Estas políticas reflejan el compromiso de BMW con la excelencia, la innovación y la responsabilidad social y ambiental, lo que le ha permitido mantenerse como una de las marcas más reconocidas y respetadas en la industria automotriz.</p>
+	</div>
+	<h3>Contactanos</h3>	
+	<div id="contactanos" class="container">
+        <div class="box">
+            <h5>Contacto</h5>
+            <p>Lago Zurich No. 272, Col. Ampliación Granada, CDMX, C.P. 11529</p>
+            <p><strong>E-mail:</strong> atencion.cars@bavariabmw.com</p>
+            <p><strong>Teléfono:</strong> 01 (55) 4624 0830</p>
+            <p><strong>WhatsApp:</strong> 55 78 60 14 06</p>
+            <a href="https://www.bmw.com.mx/content/dam/bmw/marketMX/bmw_com_mx/Descargas/Aviso-de-Privacidad/2021/Aviso-de-Privacidad-GRUPO-BAVARIA.pdf.asset.1597948023865.pdf">Aviso de Privacidad</a>
+        </div>
+        <div class="box">
+            <h5>Horario de ventas</h5>
+            <p>Lun – Vie 10:00 a 18:00</p>
+            <p>Sábado 10:00 a 17:00</p>
+            <p>Domingo 11:00 a 16:00</p>
+        </div>
+        <div class="box">
+            <h5>Horario de Servicio</h5>
+            <p>SERVICIO CENTRAL POLANCO</p>
+            <p>Schiller No. 248 Col. Polanco 11570, México D.F.</p>
+            <p><strong>Teléfono:</strong> 01 (55) 1085 3390</p>
+            <p><strong>Horario:</strong></p>
+            <p>Lunes a viernes 08:00 am a 18:00 pm</p>
+            <p>Sábado 08:00 am a 13:00 pm</p>
+
+        </div>
+    </div>
+
+    <div class="social">
+        <div class="social-box">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Logo_de_Facebook.png/220px-Logo_de_Facebook.png" alt="Facebook">
+            <h4>BMWCARSO</h4>
+            <p>Síguenos en Facebook para más noticias, preguntas y respuestas.</p>
+            <a href="https://www.facebook.com/BMWCarso">Síguenos en Facebook</a>
+        </div>
+        <div class="social-box">
+            <img src="https://images.sftcdn.net/images/t_app-icon-m/p/71178fae-bda1-4120-a598-6376c1bb3eb7/1194492299/twitter-lite-icon.png" alt="Twitter">
+            <h4>BMWCARSO</h4>
+            <p>Siempre al día con las noticias de BMW en Twitter.</p>
+            <a href="https://x.com/bmw_carso">Síguenos en Twitter</a>
+        </div>
+        <div class="social-box">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Instagram_logo_2022.svg/1200px-Instagram_logo_2022.svg.png" alt="Instagram">
+            <h4>BMWCARSO</h4>
+            <p>Recibe las últimas noticias en nuestro perfil de Instagram.</p>
+            <a href="https://www.instagram.com/bmwcarso/">Síguenos en Instagram</a>
+        </div>
+    </div>
+	</section>
+
+</body>
+</html>
