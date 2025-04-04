@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unidades de Medida en CSS: Absolutas y Relativas</title>
+    <link rel="stylesheet" type="text/css" href="estilos_unidades.css">
+</head>
+<body>
+    <h1>Unidades de Medida en CSS: Absolutas y Relativas</h1>
+    
+    <section class="absolutas">
+        <h2>Unidades de Medida Absolutas</h2>
+        <p>Las unidades absolutas son fijas y no cambian en relación con otros elementos. Son útiles cuando se necesita un control preciso sobre el tamaño, pero pueden presentar problemas en dispositivos con diferentes tamaños de pantalla o resoluciones.</p>
+        
+        <h3>Principales unidades absolutas:</h3>
+        <ul>
+            <li><strong>px (píxeles)</strong> - 1px equivale a un punto en la pantalla</li>
+            <li><strong>pt (puntos)</strong> - 1pt = 1/72 de pulgada (común en impresión)</li>
+            <li><strong>pc (picas)</strong> - 1pc = 12 puntos</li>
+            <li><strong>in (pulgadas)</strong> - 1in = 2.54cm</li>
+            <li><strong>cm (centímetros)</strong> - Centímetros reales</li>
+            <li><strong>mm (milímetros)</strong> - Milímetros reales</li>
+        </ul>
+        
+        <div class="contenedor">
+            <h3>Ejemplos de unidades absolutas:</h3>
+            
+            <div class="pixel">
+                <p>Este párrafo usa <strong>píxeles (px)</strong>: font-size: 16px; padding: 10px;</p>
+            </div>
+            
+            <div class="cm">
+                <p>Este párrafo usa <strong>centímetros (cm)</strong>: font-size: 0.5cm; padding: 0.3cm;</p>
+            </div>
+            
+            <div class="pt">
+                <p>Este párrafo usa <strong>puntos (pt)</strong>: font-size: 12pt; padding: 8pt;</p>
+            </div>
+        </div>
+        
+        <div class="consejo">
+            <p><strong>Consejo:</strong> Las unidades absolutas son mejores para medios de impresión donde el tamaño físico es conocido. Para pantallas, especialmente en diseños responsivos, las unidades relativas suelen ser más apropiadas.</p>
+        </div>
+    </section>
+    
+    <section class="relativas">
+        <h2>Unidades de Medida Relativas</h2>
+        <p>Las unidades relativas definen su valor en relación con otro elemento (como el tamaño de fuente del elemento padre o el tamaño de la ventana gráfica). Esto las hace ideales para diseños responsivos que deben adaptarse a diferentes dispositivos y tamaños de pantalla.</p>
+        
+        <h3>Principales unidades relativas:</h3>
+        <ul>
+            <li><strong>em</strong> - Relativo al font-size del elemento padre</li>
+            <li><strong>rem</strong> - Relativo al font-size del elemento raíz (html)</li>
+            <li><strong>% (porcentaje)</strong> - Relativo al elemento padre</li>
+            <li><strong>vw (viewport width)</strong> - 1% del ancho de la ventana gráfica</li>
+            <li><strong>vh (viewport height)</strong> - 1% del alto de la ventana gráfica</li>
+            <li><strong>vmin</strong> - 1% de la dimensión más pequeña de la ventana gráfica</li>
+            <li><strong>vmax</strong> - 1% de la dimensión más grande de la ventana gráfica</li>
+            <li><strong>ex</strong> - Altura de la "x" en la fuente actual</li>
+            <li><strong>ch</strong> - Ancho del carácter "0" en la fuente actual</li>
+            <li><strong>lh</strong> - Altura de línea del elemento</li>
+        </ul>
+        
+        <div class="contenedor">
+            <h3>Ejemplos de unidades relativas:</h3>
+            
+            <div class="em">
+                <p>Este párrafo usa <strong>em</strong>: font-size: 1.2em; padding: 1em;</p>
+                <div style="font-size: 0.8em;">
+                    <p>Anidado con font-size: 0.8em - nota cómo afecta a los em internos</p>
+                </div>
+            </div>
+            
+            <div class="rem">
+                <p>Este párrafo usa <strong>rem</strong>: font-size: 1.2rem; padding: 1rem;</p>
+                <div style="font-size: 0.8rem;">
+                    <p>Anidado con font-size: 0.8rem - los rem siempre son relativos al elemento raíz</p>
+                </div>
+            </div>
+            
+            <div class="porcentaje">
+                <p>Este párrafo usa <strong>porcentajes (%)</strong>: font-size: 110%; padding: 5%; width: 80%;</p>
+            </div>
+            
+            <div class="vw-vh">
+                <p>Este párrafo usa <strong>vw y vh</strong>: font-size: 2vw; padding: 1vh; width: 50vw;</p>
+                <p>Redimensiona la ventana del navegador para ver cómo cambia.</p>
+            </div></br>
+            
+            <div class="ex">
+            <p>Este párrafo usa <strong>ex</strong>: font-size: 2ex; padding: 1ex;</p>
+            </div>
+
+            <div class="ch">
+                <p>Este párrafo usa <strong>ch</strong>: width: 20ch; (Ancho de 20 ceros)</p>
+            </div>
+
+            <div class="lh">
+                <p>Este párrafo usa <strong>lh</strong>: font-size: 1lh; (igual a la altura de línea)</p>
+            </div>
+
+            <div class="vmin">
+                <p>Este párrafo usa <strong>vmin</strong>: font-size: 3vmin; padding: 2vmin;</p>
+            </div>
+
+            <div class="vmax">
+                <p>Este párrafo usa <strong>vmax</strong>: font-size: 3vmax; padding: 2vmax;</p>
+            </div>
+            </div>
+            <div class="consejo">
+                <p><strong>Consejo:</strong> Para diseños responsivos modernos, combina rem para tamaños de fuente y márgenes/paddings con unidades de viewport (vw/vh) para elementos que deben escalar con el tamaño de la pantalla.</p>
+            </div>
+    </div>
+
+    </section>
+
+    <li><a href="https://valeria202518.github.io/Programacion_Web_1/">Portafolio de evidencias</a></li>
+</body>
+</html>
