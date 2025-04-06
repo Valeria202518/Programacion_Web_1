@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="reservaciones_estilos.css">
+    <title>Menú</title>
+
+</head>
+<body>
+    
+    <div class="contenedor">
+        <header class="header">
+            <div class="header_triangulo"></div>
+            <h2>Sushi itto</h2>
+            <div class="menu-title">Reservaciones</div>
+            <div class="menu-container">
+        <div class="menu-icon" onclick="toggleMenu()">☰</div>
+        <div class="menu-options" id="menu">
+            <div class="close-menu" onclick="toggleMenu()">✖</div>
+            <a href="https://valeria202518.github.io/Programacion_Web_1/index_sushi">🍣 Home</a>
+            <a href="https://valeria202518.github.io/Programacion_Web_1/nosotros.html">🏠 Nosotros</a>
+            <a href="https://valeria202518.github.io/Programacion_Web_1/menu.html">🥢 Menú</a>
+            <a href="#">🏬 Reservaciones</a>
+            <a href="#">🔥 Comentarios</a>
+            <a href="#">📦 Ordena Ahora</a>
+        </div>
+    </div>
+        </header>
+
+        <div class="subtitulo"><h2>¡Reserva un increible servicio en SUSHI - ITTO!</h2></div>
+        <div class="texto1">
+                <section class="carrusel">
+                    <div style="width: 300%;" class="carrusel_nav">
+                        <ul>
+                            <li><img src="https://d3jky06km58rdx.cloudfront.net/assets/images/store/san-salvador/N96t60GvSKGTUCZtiJOm1V0o51kL5Nk0grjhD6s6.webp"></li>
+                            <li><img src="https://cdn-3.expansion.mx/dims4/default/e983ff7/2147483647/strip/true/crop/649x472+0+0/resize/1200x873!/format/webp/quality/60/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F8c%2F8c2e262183d946755f736d02378ca53e%2Fsushi-itto.jpg"></li>
+                            <li><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7LfjRi1oZ0DGT66OEfTJonFUFxPFmyKm-XxdJSH38yXoUoz144yaBeL3GKW071jPrEXI&usqp=CAU"></li>
+                            <li><img src="https://media.istockphoto.com/id/1008488072/es/foto/un-set-de-sushi-rollos-sobre-una-mesa-en-un-restaurante-un-grupo-de-amigos-comiendo-sushi.jpg?s=612x612&w=0&k=20&c=L0HTVQqTl0KNlQSqEA_uCI-OkQIf4aU_7U-UgC3ioGQ="></li>
+                            <li><img src="https://media.istockphoto.com/id/1136123755/es/foto/comer-sushi-en-familia.jpg?s=612x612&w=0&k=20&c=5-EBId1EzadES90-Oxm37Gi3dj6KEoAK1hMVf73QbvA="></li>
+                        </ul>
+                    </div>
+                </section>
+            </div>
+            <div class="enunciado">
+                <p><strong>¡Prepárate para una experiencia de sabor única! Reserva ahora en nuestro restaurante de sushi y déjate sorprender por la frescura, el arte y la pasión en cada rollo. ¡Tu mesa te espera! </strong></p>
+            </div>
+        
+        <div class="subtitulo" style="margin-top: 15vh;"><h2>Reserva ahora</h2></div>
+        
+        <footer class="pie">
+            <div class="social">
+                <div class="social-box">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Logo_de_Facebook.png/220px-Logo_de_Facebook.png" alt="Facebook">
+                    <h4>SUSHI ITTO</h4>
+                    <p>Síguenos en Facebook para más noticias, preguntas y respuestas.</p>
+                    <a href="https://www.facebook.com/SushiIttoOficial/?locale=es_LA">Síguenos en Facebook</a>
+                </div>
+                <div class="social-box">
+                    <img src="https://images.sftcdn.net/images/t_app-icon-m/p/71178fae-bda1-4120-a598-6376c1bb3eb7/1194492299/twitter-lite-icon.png" alt="Twitter">
+                    <h4>SUSHI ITTO</h4>
+                    <p>Siempre al día con las noticias de BMW en Twitter.</p>
+                    <a href="https://www.instagram.com/sushiittosanluis/?hl=es">Síguenos en Twitter</a>
+                </div>
+                <div class="social-box">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Instagram_logo_2022.svg/1200px-Instagram_logo_2022.svg.png" alt="Instagram">
+                    <h4>SUSHI ITTO</h4>
+                    <p>Recibe las últimas noticias en nuestro perfil de Instagram.</p>
+                    <a href="https://www.instagram.com/sushiittosanluis/?hl=es">Síguenos en Instagram</a>
+                </div>
+            </div>
+            <h5>
+                <p>Página web desarrollada para la materia de Programación Web 1</p>
+                <p>Primavera 2025 Universidad Politécnica de San Luis Potosí</p>
+            </h5>
+        </footer>
+    </div>
+
+    <script>
+        function toggleMenu() {
+            var menu = document.getElementById("menu");
+            menu.style.display = (menu.style.display === "block") ? "none" : "block";
+        }
+    </script>
+
+</body>
+</html>
