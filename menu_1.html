@@ -5,6 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="menu_estilos.css">
     <title>Menú</title>
+    <style>
+        .contenido-doble {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1%;
+    padding: 20px 0;
+}
+.contenido-doble iframe {
+    flex: 1 1 49%;
+}
+
+    </style>
 
 </head>
 <body>
@@ -29,6 +42,16 @@
         </header>
 
         <div class="subtitulo"><h2>Platillos y especialidades</h2></div>
+        <div class="contenido-doble">
+    <iframe src="https://delivery.sushi-itto.com.mx/pedir" 
+        style="width: 49%; height: 500px; border: 1px solid #ccc;" 
+        title="Menú Sushi Itto Imagen"></iframe>
+
+    <iframe src="https://sushi-itto.com.mx/menu/rollos/" 
+        style="width: 49%; height: 500px; border: 1px solid #ccc;" 
+        title="Menú Sushi Itto Página Web"></iframe>
+</div>
+
         <div class="subtitulo"><h2>Promociones</h2></div>
         <div class="contenido">
             <div class="texto1">
