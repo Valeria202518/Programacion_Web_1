@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style_nosotros.css">
+	<title>Sushiitto</title>
+</head>
+<body>
+
+	<div class="contenedor1">
+	        <header class="header">
+	            <div class="header_triangulo"></div>
+	            <h2>Sushi itto</h2>
+	            <div class="menu-title">Nosotros</div>
+	            <div class="menu-container">
+	                <div class="menu-icon" onclick="toggleMenu()">☰</div>
+	                    <div class="menu-options" id="menu">
+	                        <div class="close-menu" onclick="toggleMenu()">✖</div>
+	                        <a href="index-proyecto.html">🍣 Home</a>
+	                        <a href="menu.html">🥢 Menú</a>
+	                        <a href="#">🏬 Sucursales</a>
+	                        <a href="#">🔥 Promociones</a>
+	                        <a href="#">📦 Ordena Ahora</a>
+	                    </div>
+	    		</div>
+	        </header>
+
+</div>
+
+<nav>
+<ul class="menu">
+	<li class="menu-item has-submenu" id="historia">
+	    Historia
+	    <ul class="submenu">
+	        <li class="submenu-item">
+	            <img src="img/pollito_itto.png">
+	           <div>
+		           	<p>
+		            	Sushiitto nace de la idea de traer a México un nuevo sabor que conquiste el paladar de los mexicanos. Esta aventura inicia en 1988 con la apertura de una barra de Sushi en la Ciudad de México, que desde el principio ofreció un concepto gastronómico inspirado en la fusión de ingredientes típicos de la cocina japonesa tradicional, acompañado por una cordial, relajada e informal atmósfera, alejada de los convencionalismos de los restaurantes japoneses.
+		            </p><br>
+		            <p>
+		            	Gracias al entusiasta recibimiento por parte del público mexicano, Sushiitto se enfocó en consentir a sus invitados a través de la creación de menús en permanente innovación con platillos inspirados en la gastronomía japonesa y el gusto occidental, que dio como resultado una equilibrada y armoniosa fusión de sabores, colores y sensaciones.
+		            </p><br>
+		            <p>
+		            	Gracias al entusiasta recibimiento por parte del público mexicano, Sushiitto se enfocó en consentir a sus invitados a través de la creación de menús en permanente innovación con platillos inspirados en la gastronomía japonesa y el gusto occidental, que dio como resultado una equilibrada y armoniosa fusión de sabores, colores y sensaciones.
+		            </p><br>
+
+		            <p>
+		            	Desde entonces, la oferta de platillos, la excelencia en el servicio y la calidad de los productos, ha convertido a Sushi Itto en un referente de innovación en la industria restaurantera y pionero al ser el primer restaurante japonés en México en ofrecer servicio a domicilio.
+		            </p><br>
+
+		            <p>
+		            	Actualmente Sushiitto cuenta con más de 130 unidades operando en México, Centro y Sudamérica, gracias a la consolidación y éxito de un concepto gastronómico que atrajo la atención de inversionistas que impulsaron el desarrollo de franquicias.
+		       	 	</p>
+	           </div>
+	        </li>
+	    </ul>
+	</li>
+
+	</li>
+	<li class="menu-item has-submenu" id="mision-y-vision">
+	    Misión y visión
+	    <ul class="submenu">
+	        <li class="submenu-item">   
+	        	<img src="img/CHESSE-CAKE.png">
+	           <div>
+		          <h2>Misión</h2>
+		          <p>Crear alternativas de consumo mediante la oferta de platillos y la adaptación de la gastronomía oriental al gusto de los mercados locales.</p>
+
+		          <h2>Visión</h2>
+		          <p>Ser la franquicia de restaurantes de comida japonesa líder a nivel internacional.</p>
+	           </div>
+	        </li>
+	    </ul>
+	</li>
+
+	<li class="menu-item has-submenu" id="valores">
+	   valores
+	    <ul class="submenu">
+	        <li class="submenu-item">
+	           <img src="img/camelado.png">
+	           <div>
+		          	<h2>Compromiso</h2>
+		          	<p>
+		          	La lealtad, honestidad y eficiencia es el impulso que nos motiva a lograr nuestras metas de servir como se merece a nuestros invitados.
+		          	</p>
+
+		          	<h2>Trabajo en equipo</h2>
+		          	<p>
+		          	Con el fin de alcanzar la armonía y satisfacción de nuestros invitados, nos enfocamos en coordinar mejores acciones que en conjunto nos permita ofrecer la experiencia que merecen todos los días.
+		      		</p>
+
+		      		<h2>Inovación</h2>
+		          	<p>
+		          	Con el fin de alcanzar la armonía y satisfacción de nuestros invitados, nos enfocamos en coordinar mejores acciones que en conjunto nos permita ofrecer la experiencia que merecen todos los días.
+		      		</p>
+
+		      		<h2>Respeto</h2>
+		          	<p>
+		          	Con el fin de alcanzar la armonía y satisfacción de nuestros invitados, nos enfocamos en coordinar mejores acciones que en conjunto nos permita ofrecer la experiencia que merecen todos los días.
+		      		</p>
+
+		      		<h2>Orientación al cliente</h2>
+		          	<p>
+		          		Diariamente nos esforzamos por identificar y satisfacer las necesidades y deseos de nuestros clientes.
+		      		</p>
+
+		      		<h2>Calidad en el servicio</h2>
+		          	<p>
+		          		Siempre hemos buscado y alcanzado un alto nivel de excelencia sin sacrificar la calidad que nuestros invitados merecen.
+		      		</p>
+	           </div>
+	        </li>
+	    </ul>
+	</li>
+
+    <script>
+        const submenuItems = document.querySelectorAll('.has-submenu');
+        const hamburgerIcon = document.querySelector('.hamburger-icon');
+        const menu = document.querySelector('.menu');
+ 
+        submenuItems.forEach(item => {
+            const submenu = item.querySelector('.submenu');
+            item.addEventListener('click', (event) => {
+                if (event.target === item || event.target.classList.contains('has-submenu')) {
+                    submenu.classList.toggle('active');
+                    item.classList.toggle('active-submenu');
+                }
+            });
+        });
+ 
+        hamburgerIcon.addEventListener('click', () => {
+            menu.classList.toggle('open');
+        });
+</script>
+
+
+	<script>
+	    function toggleMenu() {
+	        var menu = document.getElementById("menu");
+	        menu.style.display = (menu.style.display === "block") ? "none" : "block";
+	    }
+	</script>
+
+	<footer>
+		<br>
+		<hr>
+		<h3>© 2025 Sushi Itto. Todos los Derechos Reservados</h3><br/>
+		<h3>Pagina web desarrollada para la materia de Programación Web I.</h3><br/>
+		<h3>Primabera 2025. Universidad Politécnica de San Luis Potosí</h3>
+
+		<div class="redes">
+			<img src="img/tik-tok.png">
+			<img src="img/youtube.png">
+			<img src="img/instagram.png">
+			<img src="img/facebook.png">
+		</div>
+	</footer>
+</body>
+</html>
