@@ -8,15 +8,23 @@
 </head>
 <body>
 
-	<header class="header">
-		<div class="header_triangulo">
-		</div>
-		<h2>Sushi itto</h2>
-			<div class="nav"><a href="https://valeria202518.github.io/Programacion_Web_1/menu.html">Menu</a></div>
-			<div class="nav"><a href="">Nosotros</a></div>
-			<div class="nav"><a href="">Pedidos</a></div>
-			<div class="nav"><a href="">Resevaciones</a></div>
-	</header>
+	    <div class="contenedor">
+        <header class="header">
+            <div class="header_triangulo"></div>
+            <h2>Sushi itto</h2>
+            <div class="menu-title">Inicio</div>
+            <div class="menu-container">
+                <div class="menu-icon" onclick="toggleMenu()">☰</div>
+                    <div class="menu-options" id="menu">
+                        <div class="close-menu" onclick="toggleMenu()">✖</div>
+                        <a href="menu.html">🥢 Menú</a>
+                         <a href="nosotros.html">🏠 Nosotros</a>
+                        <a href="#">🏬 Sucursales</a>
+                        <a href="#">🔥 Promociones</a>
+                        <a href="#">📦 Ordena Ahora</a>
+                    </div>
+    </div>
+        </header>
 
 	<section class="carrusel">
 		<div style="order: 1; width: 40vw; height: 30vh;" class="carrusel_nav">
@@ -163,8 +171,11 @@
 	</section>
 
 	<footer>
+		<br>
 		<hr>
 		<h3>© 2025 Sushi Itto. Todos los Derechos Reservados</h3>
+		<h3>Pagina web desarrollada para la materia de Programación Web I.</h3><br/>
+		<h3>Primabera 2025. Universidad Politécnica de San Luis Potosí</h3>
 
 		<div class="redes">
 			<img src="img/tik-tok.png">
@@ -173,5 +184,13 @@
 			<img src="img/facebook.png">
 		</div>
 	</footer>
+
+
+	<script>
+	    function toggleMenu() {
+	        var menu = document.getElementById("menu");
+	        menu.style.display = (menu.style.display === "block") ? "none" : "block";
+	    }
+	</script>
 </body>
 </html>
