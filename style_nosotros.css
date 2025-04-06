@@ -5,6 +5,10 @@
 	box-sizing: border-box;
 }
 
+body{
+	background-color: #EAE4E4;
+}
+
 a{
 	text-decoration: none;
 	color: black;
@@ -12,15 +16,14 @@ a{
 
 .header{
 	width: 100vw;
-	height: 35vh;
-
+	height: 25vh;
+	font-size: 30px;
 	margin: 0 0 20px 0;
-
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: space-around;
 	align-items: center;
-
+	text-align-last: right;
 	position: relative;
 	background-color:#8A76FF;
 }
@@ -29,49 +32,6 @@ a{
 	position: relative;
 	z-index: 1;
 }
-
-.nav{
-	display: flex;
-	width: 6vw;
-	height: 5vh;
-	background-color: #FF7979;
-	border-radius:40px;
-	justify-content: center;
-	align-items: center;
-}
-
-.carrusel{
-	display: flex;
-	justify-content: center;
-	width: 100vw;
-	height: 40vh;
-}
-
- .carrusel_nav{
-	height: auto;
-	overflow: hidden;
-	margin: 10px;
-}
-
- .carrusel_nav ul{
-	display: flex;
-	width: 400%;
-	animation:slide 20s infinite alternate ease-in-out;
-}
-
-
- .carrusel_nav ul li{
-	list-style: none;
-	position: relative;
-	margin: auto 0;
-}
-
-
- .carrusel_nav ul li img{
-	width: 40vw;
-	height: 30vh;
-}
-
 .header_triangulo{
     position: absolute;
     left: 0;
@@ -82,27 +42,18 @@ a{
     border-left: 30vw solid #CA98FF;
 }
 
-.header-icono {
-	width: 5%;
+
+.nav{
+	display: flex;
+	width: 70vw;
+	height: 10vh;
+	border-radius:40px;
+	justify-content: center;
+	align-items: center;
+	font-size: 50px;
+	text-decoration-color: white;
 }
 
-.header-icono img{
-	width: 50%;
-}
-
-@keyframes slide{
-	0% {margin-left:0;}
-	20% {margin-left:0;}
-
-	25% {margin-left:-100%;}
-	45% {margin-left:-100%;}
-
-	50% {margin-left:-200%;}
-	70% {margin-left:-200%;}
-
-	75% {margin-left:-300%;}
-	100% {margin-left:-300%;}
-}
 
 
 .promo-boton,.promo-titulo{
@@ -394,7 +345,6 @@ hr{
 }
 
 h3{
-	margin: 20px;
 	text-align: center;
 	font-size: 10px;
 }
@@ -407,9 +357,105 @@ h3{
 .redes img{
 	width: 4vw;
 	margin: 0 1vw;
-}
+} 
 
- .menu-container {
+
+.contenedor {
+	max-width: 800px;
+	margin: 20px auto;
+	color: #fff;
+	padding: 20px;
+	border-radius: 5px;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+ 
+        h1 {
+            margin-top: 0;
+            font-size: 1.5em;
+            color: #fff;
+        }
+ 
+        .menu{
+            list-style: none;
+            width: 80%;
+            padding: 0;
+            margin: 0;
+        }
+ 
+        .menu-item{
+            padding: 10px 15px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+ 
+        .menu-item:hover{
+            background-color: #1b5e20; 
+        }
+ 
+        .submenu{
+            display: none;
+            list-style: none;
+            padding-left: 15px;
+            margin: 0;
+            color: #fff;
+        }
+ 
+        .submenu.active {
+            display: block;
+        }
+ 
+        .submenu-item {
+            padding: 10px 15px;
+            cursor: pointer;
+         
+        }
+ 
+        .menu-item.has-submenu::after {
+            content: '▼';
+            float: right;
+            margin-left: 5px;
+        }
+ 
+        .menu-item.active-submenu::after {
+            content: '▲';
+        }
+
+        nav{
+        	width: 100%;
+        	display: flex;
+        	flex-flow: row;
+        	justify-content: center;
+        }
+
+        #historia{
+        	padding:20px;
+        	background-color:#8A76FF;
+        	border-radius: 60px 60px 0 0;
+        }
+
+        #mision-y-vision{
+        	background-color:#D5E008;
+        }
+
+        #valores{
+        	background-color:#7EF6F8;
+        }
+
+        .submenu-item{
+        	display: flex;
+        	justify-content:space-between;
+        }
+
+        .submenu-item img{
+        	width: 40vw;
+        	height: 10%;
+        }
+
+    footer{
+    	margin: 20px;
+    }
+
+    .menu-container {
             position: relative;
             display: inline-block;
             z-index: 1;

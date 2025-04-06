@@ -34,7 +34,7 @@ a{
             height: 100%;
             background: #871eb5;
             color: white;
-            padding: 2em .2em;
+            padding: 2.5em .2em;
             box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
         }
         .menu-options a {
@@ -111,9 +111,16 @@ a{
 
 iframe {
     width: 50%;
-    height: 500px;
+    height: 100%;
     padding: 20px;
     border-color: white;
+    margin: 0 auto;
+}
+
+.iframe{
+	width: 100%;
+	height: 90vh;
+	display: flex;
 }
 
 h2{
@@ -157,7 +164,7 @@ h5{
 
 
  .carrusel_nav ul li img{
-	width: 36vw;
+	width: 36.8vw;
 	height: 45vh;
 }
 
@@ -207,8 +214,8 @@ h5{
 
 
  .carrusel_nav_2 ul li img{
-	width: 64.3vw;
-	height: 90vh;
+	width: 67vw;
+	height: 100vh;
 }
 
 @keyframes slide carrusel_nav_2{
@@ -297,3 +304,19 @@ h5{
 	background-color: #d687f8;
 	margin-top:10px;
 }
+
+.redes{
+	display: flex;
+	flex-flow: row-reverse;
+}
+
+.redes img{
+	width: 4vw;
+	margin: 0 1vw;
+}
+
+h3{
+	text-align: center;
+	font-size: 10px;
+}
+
