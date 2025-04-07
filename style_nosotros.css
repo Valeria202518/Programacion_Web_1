@@ -14,20 +14,6 @@ a{
 	color: black;
 }
 
-.header{
-	width: 100vw;
-	height: 25vh;
-	font-size: 30px;
-	margin: 0 0 20px 0;
-	display: flex;
-	flex-flow: row wrap;
-	justify-content: space-around;
-	align-items: center;
-	text-align-last: right;
-	position: relative;
-	background-color:#8A76FF;
-}
-
 .header_triangulo h2{
 	position: relative;
 	z-index: 1;
@@ -94,260 +80,7 @@ a{
 	margin: 10vh 0 0 0;
 }
 
-/*CELULAR*/
 
-.app{
-	margin: 10vh 0;
-	width: 100%;
-	height: 80vh;
-	display: flex;
-	flex-flow: row;
-	justify-content: center;
-}
-
-.app-fondo{
-	width: 80%;
-	height: 80%;
-	border-radius: 40em;
-	background-color:#8A76FF;
-	opacity: .8;
-}
-
-.celular{
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	left: 7vw;
-	top: -5vh;
-	position: absolute;
-	min-width:250px;
-	height: 65vh;
-	background-color: lightgray;
-	border-radius: 40px 40px 0 0;
-}
-
-/* contenido */
-.pantalla{
-	background-color: white;
-	width: 85%;
-	height: 95%;
-	border-radius: 40px 40px 0 0;
-	display: flex;
-	flex-flow: column;
-	max-width: 250px;
-}
-
-
-.iconos{
-	width: 100%;
-	height: 100%;
-}
-
-#icono1{
-	display: flex;
-	flex-flow: row wrap;
-	height: 10%;
-	border-radius: 40px 40px 0 0;
-	padding: 10%;
-	justify-content: space-around;
-}
-
-.circulo{
-	width: 10%;
-	height: 500%;
-	border-radius: 50%;
-	background-color:lightgray;
-}
-
-.iconos img{
-	height:4vh;
-	top: -1vh;
-	
-}
-
-#imagen-fondo{
-	display: flex;
-	background-color:#ECDCF8;
-	justify-content: center;
-	align-items: center;
-}
-
-#imagen-fondo img{
-	height: 10vh;
-}
-
-#icono-txt{
-	display: flex;
-	flex-direction: column;
-}
-
-#icono-txt p{
-	font-size: 10px;
-}
-
-#icono-txt h2{
-	margin: 0 0 1vh 0;
-	font-size: 10px;
-}
-
-#icono-linea{
-	display: flex;
-	justify-content: flex-start;
-	align-items: center;
-	height: 10vh;
-	background-color:#F6E8E8;
-	margin: 1vh 0;
-}
-
-#icono-linea h2{
-	font-size: 10px;
-}
-
-#icono-opc{
-	display: flex;
-	height: 10vh;
-	align-items: center;
-	justify-content: space-between;
-	flex-flow: row;
-}
-
-#img-opc{
-	position: absolute;
-	top: -.5vh;
-	left: .5vw;
-	height: 2vh;
-
-}
-
-#icono-opc p{
-	font-size: 10px;
-	margin: 0 40px;
-}
-
-.sig{
-	width: 50%;
-	margin: 1vw;
-}
-
-#barra{
-	height: .2vh;
-	background-color: black;
-}
-
-.icono-boton{
-	width: 80%;
-	padding: 1vw;
-	height: 3vh;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	border-radius: 10px;
-	background-color:#FF6363;
-}
-
-.icono-boton p{
-	font-size: 10px;
-}
-
-#caja-boton{
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-
-#iconos-imgs{
-	padding: 1vh;
-	display: flex;
-	justify-content: space-around;
-
-}
-
-.caja-iconos-imgs{
-	width: 10%;
-	display: flex;
-	flex-flow: column;
-	align-items: center;
-}
-
-.iconos-imgs img{
-	width: 2vw;
-	height: auto;
-}
-
-#iconos-imgs{
-	display: flex;
-	align-items: center;
-}
-
-.iconos-imgs p{
-	text-align: center;
-	font-size: 7px;
-}
-
-.contenido{
-	height: auto;
-	position: absolute;
-	right: 22vw;
-	top: 10vh;
-	display: flex;
-	flex-flow: column;
-	align-items: center;
-	justify-content: center;
-}
-
-.contenido h1{
-	font-size: 70px;
-}
-
-.ordenar{
-	margin: 5vh 0;
-	width: 80%;
-	height: 6em;
-	padding: 1px;
-	background-color:white;
-	text-align: center;
-	border-radius: 40px;
-	display: flex;
-	justify-content: space-between;
-}
-
-.ordenar img{
-	width: 3vw;
-}
-
-.ordenar-content{
-	padding: 16px;
-	display: flex;
-	width:90%;
-	justify-content: space-between;
-	align-items: center;
-}
-
-.ordenar-content p{
-	font-size: 25px;
-}
-
-.ordenar-img{
-	position: absolute;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	top: 80%;
-}
-
-.ordenar-img img{
-	width: 50%;
-}
-
-hr{
-	width: 90%;
-	margin: auto;
-}
-
-h3{
-	text-align: center;
-	font-size: 10px;
-}
 
 .redes{
 	display: flex;
@@ -361,7 +94,7 @@ h3{
 
 
 .contenedor {
-	max-width: 800px;
+	max-width:100%;
 	margin: 20px auto;
 	color: #fff;
 	padding: 20px;
@@ -503,7 +236,7 @@ h3{
             cursor: pointer;
         }
 .header{
-	width: 100vw;
+	width: 100%;
 	height: 25vh;
 	font-size: 30px;
 	margin: 0 0 20px 0;
@@ -553,4 +286,32 @@ h3{
 	border-radius:40px;
 	justify-content: center;
 	align-items: center;
+}
+
+
+/*Estilo de las localidades*/
+
+.contenedorCarrusel-map{
+	position: relative;
+	margin: 2% 10%;
+	width: 80%;
+	height: 500px;
+}
+
+.carrusel{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+
+.carrusel-seccion{
+	width: 40%;
+	height: 100%;
+}
+
+.carrusel-seccion iframe{
+	width: 100%;
+	height: 100%;
+	border-radius: 15px;
 }
