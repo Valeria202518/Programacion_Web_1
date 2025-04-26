@@ -1,0 +1,80 @@
+body{
+  background-color: #c257f7;
+}
+
+form {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #c8acfc;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  border: 3px solid black;
+}
+
+h2, h3 {
+  color: #612bc7;
+  font-size: 3.5vh;
+}
+
+label {
+  display: block;
+  margin: 10px 0;
+  font-family: calibri;
+  font-size: 3vh;
+}
+
+input, select, textarea, button {
+  display: block;
+  width: 100%;
+  margin-top: 5px;
+  padding: 8px;
+  border: 1px solid black;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #3664f3;
+  color: white;
+  border: 2px solid black;
+  cursor: pointer;
+  margin-top: 15px;
+}
+
+button:hover {
+  background-color: #27adf7;
+}
+
+.form-section {
+  margin-bottom: 50px;
+  padding: 10px 0;
+  border-top: 2px solid #6b13d4;
+}
+
+#carrito {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+#carrito th, #carrito td {
+  border: 2px solid black;
+  padding: 8px;
+  text-align: center;
+}
+
+#tiempoEstimado {
+  margin-top: 10px;
+  font-weight: bold;
+}
+input[type=password]{
+    width: 100%;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 4px solid gray;
+    line-height: 12px;
+    border-radius: 4px;
+    background-color: lightgray;
+    color: black;
+  }
