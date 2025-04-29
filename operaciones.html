@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Operaciones con JavaScript</title>
+	<script type="text/javascript" src="operacionesjs.js"></script>
+</head>
+
+<style>
+	>
+		body {
+			font-family: Arial, sans-serif;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		form {
+			background: #6410e5;
+			padding: 30px;
+			border-radius: 10px;
+			box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+			text-align: center;
+			width: 50%;
+			margin-left: 23%;
+			border-color: #dac8fa;
+		}
+		h1 {
+			text-align: center;
+			color: white;
+			margin-bottom: 20px;
+			font-size: 10vh;
+		}
+		h2{
+			width: 50%;
+			padding: 10px;
+			margin-bottom: 15px;
+			border: 4px solid white;
+			border-radius: 5px;
+			margin-left: 24.5%;
+			color: white;
+		}
+		label {
+			display: block;
+			margin-bottom: 5px;
+			font-weight: bold;
+			font-size: 5vh;
+			color: #cbaefe;
+		}
+		input[type="text"] {
+			width: 50%;
+			padding: 10px;
+			margin-bottom: 15px;
+			border: 4px solid #dac8fa;
+			border-radius: 5px;
+		}
+		input[type="button"] {
+			background-color: #31bbb5;/*color botones*/
+			color: white;
+			border: none;
+			padding: 5px 15px;
+			margin: 5px;
+			border-radius: 5px;
+			cursor: pointer;
+			transition: background-color 0.3s;
+			font-size: 5vh;
+		}
+</style>
+
+<body style="background-color: black">
+	<h1>Operaciones</h1>
+	<form>
+		<label for="num1">Escribe un numero</label>
+		<input type="text" name="num1" id="num1" placeholder="Escribe un numero"><br/><br/>
+
+		<label for="num2">Escribe un numero</label>
+		<input type="text" name="num2" id="num2" placeholder="Escribe un numero"><br/><br/>
+
+		<input type="button" name="Suma" id="Suma" value="Suma" onclick="sumar()">
+		<input type="button" name="Resta" id="Resta" value="Resta" onclick="restar()">
+		<input type="button" name="Multiplicacion" id="Multiplicacion" value="Multiplicacion" onclick="multiplicar()">
+		<input type="button" name="Division" id="Division" value="Division" onclick="dividir()">
+	</form>
+	<h2>Respuesta</h2>
+	<p style="text-align: center; margin-top: -9vh; color: white; font-size: 4vh" id="r"></p>
+	<a href="https://valeria202518.github.io/Programacion_Web_1/">Portafolio de evidencias</a></li>
+</body>
+</html>
