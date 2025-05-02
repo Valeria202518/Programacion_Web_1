@@ -10,75 +10,6 @@ a{
 	color: black;
 }
 
-/* titulos */
-
-.header{
-	width: 100vw;
-	height: 25vh;
-	font-size: 30px;
-	margin: 0 0 20px 0;
-	display: flex;
-	flex-flow: row wrap;
-	justify-content: space-around;
-	align-items: center;
-	text-align-last: right;
-	position: relative;
-	background-color:#8A76FF;
-}
-
-.nav{
-	display: flex;
-	width: 70vw;
-	height: 10vh;
-	border-radius:40px;
-	justify-content: center;
-	align-items: center;
-	font-size: 50px;
-	text-decoration-color: white;
-}
-
-.menu-title {
-    font-size: 60px;
-    font-style: italic;
-    margin-right: 100px;
-    color: white;
-    display: flex;
-	width: 70vw;
-	height: 10vh;
-	border-radius:40px;
-	justify-content: center;
-	align-items: center;
-}
-
-/*Figura triangulo*/
-
-.header_triangulo h2{
-	position: relative;
-	z-index: 1;
-}
-
-.header_triangulo{
-    position: absolute;
-    left: 0;
-    background-color: none;
-    border-top: 12vh solid #8A76FF;
-    border-right:30vw solid #8A76FF;
-    border-bottom:12vh solid transparent;
-    border-left: 30vw solid #CA98FF;
-}
-
-/*navegador*/
-
-.nav{
-	display: flex;
-	width: 6vw;
-	height: 5vh;
-	background-color: #FF7979;
-	border-radius:40px;
-	justify-content: center;
-	align-items: center;
-}
-
 
 /*Carrusel de imagenes*/
 
@@ -111,7 +42,7 @@ a{
 
  .carrusel_nav ul li img{
 	width: 40vw;
-	height: 30vh;
+	height: 100%;
 }
 
 
@@ -129,32 +60,37 @@ a{
 	100% {margin-left:-300%;}
 }
 
+/*Fin de carrusel*/
 
+/*Boton de promo*/
 .promo-boton,.promo-titulo{
 	display: flex;
 	justify-content: center;
 }
 
-
-
-
-
 .titulo{
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	margin: 2vh 0 0 0;
-	text-align: center;
 	background-color:#F17A7A;
 	border-radius:20px;
-	width: 20vw;
-	height: auto;
+	width: 25%;   
+	height: 2em;
+	box-shadow: #333 2px 4px;
 }
 
 .boton{
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	margin: 10vh 0 10vh 0;
-	text-align: center;
 	background-color:#E8A6EE;
 	border-radius:20px;
-	width: 10vw;
-	height: auto;
+	width: 20%;
+	height: 2.6em;
+
+	box-shadow: #333 2px 4px;
 }
 
 .boton a{
@@ -171,6 +107,7 @@ a{
 	width: 35%;
 	margin: 10vh 0 0 0;
 }
+/*Fin boton promo*/
 
 /*CELULAR*/
 
@@ -195,19 +132,20 @@ a{
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	left: 7vw;
-	top: -5vh;
+	left: 7%;
+	top: -5%;
 	position: absolute;
-	min-width:250px;
-	height: 65vh;
+	min-width:290px;
+	height: 150%;
 	background-color: lightgray;
 	border-radius: 40px 40px 0 0;
+	margin-right: 20%;
 }
 
 /* contenido */
 .pantalla{
 	background-color: white;
-	width: 85%;
+	width: 100%;
 	height: 95%;
 	border-radius: 40px 40px 0 0;
 	display: flex;
@@ -228,12 +166,14 @@ a{
 	border-radius: 40px 40px 0 0;
 	padding: 10%;
 	justify-content: space-around;
+	margin-bottom: 20%;
 }
 
 .circulo{
 	width: 10%;
-	height: 500%;
+	height:calc(100% +5px);
 	border-radius: 50%;
+	margin-right: 30%;
 	background-color:lightgray;
 }
 
@@ -365,8 +305,8 @@ a{
 .contenido{
 	height: auto;
 	position: absolute;
-	right: 22vw;
-	top: 10vh;
+	right: 22%;
+	top: 10%;
 	display: flex;
 	flex-flow: column;
 	align-items: center;
@@ -487,3 +427,13 @@ h3{
             border-radius: 5px;
             cursor: pointer;
         }
+
+@media (max-width:1400px) {
+	.contenido{
+		display: none;
+	}
+
+	.app-fondo{
+		background-color: white;
+	}
+}

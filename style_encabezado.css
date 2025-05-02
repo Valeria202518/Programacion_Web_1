@@ -1,0 +1,49 @@
+
+/* titulos */
+
+.header{
+	width: 100vw;
+	height: 25vh;
+	font-size: 30px;
+	margin: 0 0 20px 0;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	text-align-last: right;
+	position: relative;
+	background-color:#8A76FF;
+}
+
+
+.menu-title {
+    font-size: 60px;
+    font-style: italic;
+    margin-right: 100px;
+    color: white;
+    display: flex;
+	width: 70vw;
+	height: 10vh;
+	border-radius:40px;
+	justify-content: center;
+	align-items: center;
+}
+
+/*Figura triangulo*/
+
+.header_triangulo h2{
+	position: relative;
+	z-index: 1;
+}
+
+.header_triangulo{
+    position: absolute;
+    left: 0;
+    background-color: none;
+    border-top: 12vh solid #8A76FF;
+    border-right:30vw solid #8A76FF;
+    border-bottom:12vh solid transparent;
+    border-left: 30vw solid #CA98FF;
+}
+
+/*navegador*/
+

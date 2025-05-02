@@ -14,33 +14,6 @@ a{
 	color: black;
 }
 
-.header_triangulo h2{
-	position: relative;
-	z-index: 1;
-}
-.header_triangulo{
-    position: absolute;
-    left: 0;
-    background-color: none;
-    border-top: 12vh solid #8A76FF;
-    border-right:30vw solid #8A76FF;
-    border-bottom:12vh solid transparent;
-    border-left: 30vw solid #CA98FF;
-}
-
-
-.nav{
-	display: flex;
-	width: 70vw;
-	height: 10vh;
-	border-radius:40px;
-	justify-content: center;
-	align-items: center;
-	font-size: 50px;
-	text-decoration-color: white;
-}
-
-
 
 .promo-boton,.promo-titulo{
 	display: flex;
@@ -132,10 +105,10 @@ a{
             margin: 0;
             color: #fff;
         }
- 
-        .submenu.active {
-            display: block;
-        }
+
+.submenu.active {
+    display: block;
+}
  
         .submenu-item {
             padding: 10px 15px;

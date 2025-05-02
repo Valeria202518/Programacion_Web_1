@@ -5,7 +5,6 @@ function toggleMenu() {
     menu.style.display = (menu.style.display === "block") ? "none" : "block";
 }
 
-
 const input = document.getElementById('numero');
 
 input.addEventListener('mouseenter', function() {
