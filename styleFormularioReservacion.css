@@ -194,8 +194,6 @@ h5{
 	font-size: 40px;
 }
 .contenido{
-	display: flex;
-	flex-direction: space-between;
 	flex: 1;
 	background: lavender;
 }
@@ -208,18 +206,6 @@ h5{
 	color: #270760;
 	position: relative;
 
-}
-.texto1{
-	position: relative;
-	padding: 15px;
-	background: #9d71fb;
-	border: 1px lightgray;
-	flex: 1;
-	box-shadow: 15px 15px rgba(0, 0, 0, 0.3);
-	text-align: center;
-	font-size: 40px;
-	color: #5510e8;
-	height: auto;
 }
 
 @media(max-width:500px){
@@ -250,22 +236,20 @@ h5{
 }
 
 .bottonForm{
-	background-color: #8A76FF;
-    color: white;
-    padding: 10px 20px;
-    font-size: 16px;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-    box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
-    width: 10%;
+	position: relative;
+	border-radius: 50px;
+	top: 10%;
+	width: 10%;
+	height: 10%;
+	z-index:1;
+	background-color:white;
+	cursor: pointer;
 }
 
 .bottonForm a p{
 	font-size: 15px;
 }
 
-/*#270760 */
 .formulario{
 	position: absolute;
 	background-color: #e1c1ef;
@@ -300,7 +284,185 @@ h5{
 .redes img{
 	width: 4vw;
 	margin: 0 1vw;
+    transition: width 0.5s ease;
 } 
+
+.redes img:hover{
+    width: 4.2vw;
+}
+
 footer{
 	margin: 20px;
+}
+
+/*Contenido*/ 
+
+.contenidoForm{
+    display: flex;
+    flex-flow:column;
+    align-items: flex-start;
+}
+
+.parte_1{
+    display:flex;
+    height: 20%;
+    width: 50%;
+    justify-content: space-around;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2%;
+
+}
+
+center{
+    width: 100%;
+}
+
+#imgForm{
+    width: 15%;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+}
+
+.tienda{
+    margin-left: 10%;
+}
+
+.tienda p{
+    margin: 0%;
+}
+
+.seleccionTienda {
+    padding: 10px 15px;
+    font-size: 18px;
+    border: 2px solid #8A76FF;
+    border-radius: 10px;
+    background-color: white;
+    color: #270760;
+    outline: none;
+    transition: box-shadow 0.3s, border-color 0.3s;
+    margin-top: 10px;
+    width: 90%;
+    max-width: 400px;
+}  
+  /* Cuando está enfocado */
+.seleccionTienda:focus {
+    border-color: #CA98FF;
+    box-shadow: 0 0 12px rgba(202, 152, 255, 0.6);
+}
+
+.parte_2{
+    margin-left: 1%;
+    width: 50%;
+}
+
+.input-container {
+    margin: 5% auto;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    color: #270760;
+}  
+.input-container label {
+    margin-bottom: 8px;
+}  
+.input-container input[type="number"] {
+    padding: 10px;
+    font-size: 18px;
+    border: 2px solid #8A76FF;
+    border-radius: 10px;
+    outline: none;
+    transition: 0.3s;
+}  
+.input-container input[type="number"]:focus {
+    border-color: #CA98FF;
+    box-shadow: 0 0 8px rgba(202, 152, 255, 0.5);
+}
+
+/*Parte 3*/
+
+.contenido{
+    border: solid #8A76FF;
+    border-radius: 50px 0 0 0;
+    width: 90%;
+    margin: auto;
+    padding:2%;
+}
+
+.parte_3 {
+    border: 1px solid gray;
+    width: 100%;
+    padding: 20px;
+    border-radius: 30px 0 0 0; /* solo esquina superior izquierda redondeada */
+    font-family: 'Georgia', serif;
+    z-index: 1;
+}
+
+.parte_3 h2 {
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+.contenido form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contenido label {
+    font-style: italic;
+    margin-bottom: 5px;
+}
+
+.contenido input {
+    border: none;
+    border-bottom: 1px solid gray;
+    outline: none;
+    padding: 5px;
+    font-style: italic;
+    font-family: inherit;
+}
+
+#deposito {
+    border: none;
+    border-radius: 8px;
+    padding: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    font-style: italic;
+}
+
+#comentario{
+    width: 50%;
+    margin: none;
+    margin-right: 10%;
+    margin-top: 5%;
+}
+#enviar{
+    background-color: #8A76FF;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+    transition: background-color 0.5s ease;
+}
+
+.regresar{
+    background-color: #8A76FF;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+    width: 10%;
+}
+
+#enviar:hover{
+    background-color:  #7a64f5;
 }
