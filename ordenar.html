@@ -1,77 +1,89 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="ordenaya.css">
-    <link rel="stylesheet" type="text/css" href="style_texto.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="ordenaya.css" />
+    <link rel="stylesheet" type="text/css" href="style_texto.css" />
     <title>Ordena ahora</title>
     <style>
-        .contenido-doble {
+      .contenido-doble {
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
         gap: 1%;
         padding: 20px 0;
-        }
-        .contenido-doble iframe {
+      }
+      .contenido-doble iframe {
         flex: 1 1 49%;
-}
+      }
     </style>
-</head>
-<body>
-    
+  </head>
+  <body>
     <div class="contenedor">
-        <header class="header">
-            <div class="header_triangulo"></div>
-            <h2>Sushi itto</h2>
-            <div class="menu-title"><h1>Ordena Ahora</h1></div>
-            <div class="menu-container">
-        <div class="menu-icon" onclick="toggleMenu()">☰</div>
-        <div class="menu-options" id="menu">
+      <header class="header">
+        <div class="header_triangulo"></div>
+        <h2>Sushi itto</h2>
+        <div class="menu-title"><h1>Ordena Ahora</h1></div>
+        <div class="menu-container">
+          <div class="menu-icon" onclick="toggleMenu()">☰</div>
+          <div class="menu-options" id="menu">
             <div class="close-menu" onclick="toggleMenu()">✖</div>
             <a href="index-proyecto.html">🍣 Home</a>
             <a href="nosotros.html">🏠 Nosotros</a>
             <a href="menu.html">🥢 Menú</a>
             <a href="Reservaciones.html">🏬 Reservaciones</a>
             <a href="ayuda.html">🔥 Ayuda</a>
+          </div>
         </div>
-    </div>
-        </header>
+      </header>
 
-        <div class="subtitulo"><h2>¡Ordena tu platillo favorito!</h2></div>
-        <div class="contenido-doble">
-        <iframe src="https://www.sushiittomx.com/wp-content/uploads/MENU-Suhiito.pdf" 
-        style="width: 49%; height: 500px; border: 1px solid #ccc;" 
-        title="Menú Sushi Itto Imagen"></iframe>
+      <div class="subtitulo"><h2>¡Ordena tu platillo favorito!</h2></div>
+      <div class="contenido-doble">
+        <iframe
+          src="https://www.sushiittomx.com/wp-content/uploads/MENU-Suhiito.pdf"
+          style="width: 49%; height: 500px; border: 1px solid #ccc"
+          title="Menú Sushi Itto Imagen"
+        ></iframe>
 
-        <iframe src="https://valeria202518.github.io/Programacion_Web_1/formsorden" 
-        style="width: 49%; height: 500px; border: 1px solid #ccc;" 
-        title="Menú Sushi Itto Página Web"></iframe>
+        <iframe
+          src="formsorden.html"
+          style="width: 49%; height: 500px; border: 1px solid #ccc"
+          title="Menú Sushi Itto Página Web"
+        ></iframe>
+      </div>
+
+      <footer>
+        <br />
+        <hr />
+        <h3>© 2025 Sushi Itto. Todos los Derechos Reservados</h3>
+        <br />
+        <h3>Pagina web desarrollada para la materia de Programación Web I.</h3>
+        <br />
+        <h3>Primavera 2025. Universidad Politécnica de San Luis Potosí</h3>
+
+        <div class="redes">
+          <a href="https://www.tiktok.com/@sushiittomx" target="_BLANK"
+            ><img src="img/tik-tok.png"
+          /></a>
+          <a href="https://www.youtube.com/@sushiitto_oficial" target="_BLANK"
+            ><img src="img/youtube.png"
+          /></a>
+          <a href="https://www.instagram.com/sushiittooficial/" target="_BLANK"
+            ><img src="img/instagram.png"
+          /></a>
+          <a href="https://www.facebook.com/SushiIttoOficial" target="_BLANK"
+            ><img src="img/facebook.png"
+          /></a>
         </div>
-
-        <footer>
-            <br>
-            <hr>
-            <h3>© 2025 Sushi Itto. Todos los Derechos Reservados</h3><br/>
-            <h3>Pagina web desarrollada para la materia de Programación Web I.</h3><br/>
-            <h3>Primavera 2025. Universidad Politécnica de San Luis Potosí</h3>
-    
-            <div class="redes">
-                <a href="https://www.tiktok.com/@sushiittomx" target="_BLANK"><img src="img/tik-tok.png"></a> 
-                <a href="https://www.youtube.com/@sushiitto_oficial" target="_BLANK"><img src="img/youtube.png"></a>
-                <a href="https://www.instagram.com/sushiittooficial/" target="_BLANK"><img src="img/instagram.png"></a> 
-                <a href="https://www.facebook.com/SushiIttoOficial" target="_BLANK"><img src="img/facebook.png"></a> 
-            </div>
-        </footer>
+      </footer>
     </div>
 
     <script>
-        function toggleMenu() {
-            var menu = document.getElementById("menu");
-            menu.style.display = (menu.style.display === "block") ? "none" : "block";
-        }
+      function toggleMenu() {
+        var menu = document.getElementById("menu");
+        menu.style.display = menu.style.display === "block" ? "none" : "block";
+      }
     </script>
-
-</body>
+  </body>
 </html>
