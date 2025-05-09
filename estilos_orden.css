@@ -78,3 +78,23 @@ input[type=password]{
     background-color: lightgray;
     color: black;
   }
+  .estrellas {
+  direction: rtl;
+  unicode-bidi: bidi-override;
+  display: inline-flex;
+}
+.estrellas input[type="radio"] {
+  display: none;
+}
+.estrellas label {
+  font-size: 2em;
+  color: lightgray;
+  cursor: pointer;
+}
+.estrellas input[type="radio"]:checked ~ label {
+  color: gold;
+}
+.estrellas label:hover,
+.estrellas label:hover ~ label {
+  color: gold;
+}
