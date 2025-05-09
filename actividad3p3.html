@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Diagnóstico de C</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700">
+  <link rel="stylesheet" type="text/css" href="act3_estilos.css">
+</head>
+<body>
+  <h1>Formulario de Programación: Lenguaje C</h1>
+  <form id="quizForm">
+    <div id="questions"></div>
+    <button type="button" onclick="calificar()">Enviar Respuestas</button>
+  </form>
+
+  <div id="score"></div>
+  <canvas id="resultChart"></canvas>
+  <button onclick="descargar()">Descargar PDF</button>
+
+  <script src="funciones_act3.js"></script>
+</body>
+</html>
