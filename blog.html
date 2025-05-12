@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sushi Itto Blog</title>
+  <link rel="stylesheet" href="style_blog.css">
+</head>
+<body>
+  <header>
+    <h1>🍣 Bienvenido al Blog de Sushi Itto</h1>
+    <p>Tu espacio para opinar, recomendar y preguntar</p>
+  </header>
+
+  <main>
+    <section class="form-section">
+      <h2>📝 Deja tus sugerencias y comentarios</h2>
+      <form id="commentForm">
+        <input type="text" id="name" placeholder="Tu nombre" required>
+        <textarea id="message" placeholder="Escribe tu comentario..." required></textarea>
+        <label for="rating">⭐ Califica nuestro servicio:</label>
+        <select id="rating">
+          <option value="5">5 - Excelente</option>
+          <option value="4">4 - Muy bueno</option>
+          <option value="3">3 - Bueno</option>
+          <option value="2">2 - Regular</option>
+          <option value="1">1 - Malo</option>
+        </select>
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+
+    <section class="comments-section">
+      <h2>💬 Comentarios de nuestro servicio a  clientes</h2>
+      <div id="commentsContainer"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Sushi Itto. Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="blog.js"></script>
+</body>
+</html>
