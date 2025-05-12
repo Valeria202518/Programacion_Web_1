@@ -18,7 +18,7 @@ h2{
 
 .iframe-ayuda {
     width: 100%;
-    height: 350px;
+    height: 90vh;
     border: 2px solid #007acc;
     border-radius: 8px;
     margin-right: 2rem;
@@ -94,6 +94,13 @@ h2{
 .submenu_preg.active {
     display: block;
 }
+
+
+
+.submenu_preg.visible {
+    display: block;
+}
+
 
 
 .menu_item.has-submenu::after {
@@ -282,4 +289,5 @@ h3{
       padding: 20px;
       text-align: center;
       font-size: 50px;
+      margin-top: 2%;
   }

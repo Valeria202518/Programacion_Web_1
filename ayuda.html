@@ -152,6 +152,17 @@
             <a href="https://www.facebook.com/SushiIttoOficial" target="_BLANK"><img src="img/facebook.png"></a> 
         </div>
     </footer>
+    
+<script>
+	// Lógica para expandir/cerrar preguntas frecuentes
+	document.querySelectorAll('.menu_item.has-submenu > strong').forEach(item => {
+	    item.style.cursor = "pointer"; // Cambia el cursor a mano
+	    item.addEventListener('click', () => {
+	        const submenu = item.parentElement.querySelector('.submenu_preg');
+	        submenu.classList.toggle('visible'); // Alterna clase de visibilidad
+	    });
+	});
+</script>
 
 
 	<script src="chatbot.js"></script>
