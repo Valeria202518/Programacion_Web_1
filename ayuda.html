@@ -24,6 +24,8 @@
 	                         <a href="nosotros.html">🏠 Nosotros</a>
 	                        <a href="Reservaciones.html">🏬 Reservaciones</a>
 							<a href="ordenar.html">📦 Ordena Ahora</a>
+							<a href="#" onclick="toggleChatbot()">🤖 Chatbot</a>
+
 	                    </div>
 	   			 </div>
 	        </header>
@@ -31,7 +33,7 @@
 	
 	<div class="contenido">
 		<aside style="padding: 0 2%;">
-	    	<h2 style="padding: 0 0 0 2%;">Sitios de opinión</h2><br>
+	    	<h2 style="padding: 0 0 0 2%;">Blog</h2><br>
 	    	<div class="contenedor"><iframe src=https://www.tripadvisor.com.mx/ShowUserReviews-g150800-d3381846-r650401695-Sushi_Itto-Mexico_City_Central_Mexico_and_Gulf_Coast.html class="iframe-ayuda" title="Ayuda Wikipedia"></iframe>
 	    </aside>
 	   <section class="contenido_section">
@@ -128,8 +130,11 @@
 	   </section>
 	
 	</div>
+
+	<div class="frase">Sitios de opinión</div>
+
 	<div class="iframes-inferiores">
-  <iframe src="https://delivery.sushi-itto.com.mx/sucursales" class="iframe-extra" title="Iframe Energía"></iframe>
+  <iframe src="https://www.tripadvisor.com.mx/ShowUserReviews-g150800-d3381846-r650401695-Sushi_Itto-Mexico_City_Central_Mexico_and_Gulf_Coast.htmlclass="iframe-ayuda" class="iframe-extra" title="Iframe Energía"></iframe>
   <iframe src="https://gastroranking.mx/r/sushi-itto-tecamachalco_52473/" class="iframe-extra" title="Iframe Fuerza"></iframe>
   <iframe src="https://ftp.todopuebla.com/directorio/sushiitto/comentarios?category=RESTAURANTES&encr=tm7jpn1ikmf34nenupio6rcri0" class="iframe-extra" title="Iframe Movimiento"></iframe>
 </div>
@@ -149,25 +154,20 @@
     </footer>
 
 
-	<script>
-		const submenuItems = document.querySelectorAll('.has-submenu');
-        const menu = document.querySelector('.preg');
- 
-        submenuItems.forEach(item => {
-            const submenu = item.querySelector('.submenu_preg');
-            item.addEventListener('click', (event) => {
-                if (event.target === item || event.target.classList.contains('has-submenu')) {
-                    submenu.classList.toggle('active');
-                    item.classList.toggle('active-submenu');
-                }
-            });
-        })
+	<script src="chatbot.js"></script>
 
+	<!-- Chatbot flotante -->
+<div id="chatbot" style="display: none;">
+  <div id="chatbot-header">
+    <span><b>Chatbot Sushi Itto</b></span>
+    <span style="cursor:pointer;" onclick="toggleChatbot()">✖</span>
+  </div>
+  <div id="chatlog"></div>
+  <div id="chatInput">
+    <input type="text" id="userInput" placeholder="Escribe tu mensaje..." />
+    <button onclick="sendMessage()">Enviar</button>
+  </div>
+</div>
 
-	    function toggleMenu() {
-	        var menu = document.getElementById("menu");
-	        menu.style.display = (menu.style.display === "block") ? "none" : "block";
-	    }
-	</script>
 </body>
 </html>

@@ -1,92 +1,138 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="menu_estilos.css">
-    <link rel="stylesheet" type="text/css" href="style_texto.css">
-    <link rel="stylesheet" type="text/css" href="style_encabezado.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="menu_estilos.css" />
+    <link rel="stylesheet" type="text/css" href="style_texto.css" />
+    <link rel="stylesheet" type="text/css" href="style_encabezado.css" />
+    <link rel="stylesheet" type="text/css" href="chat.css" />
     <title>Menú</title>
-
-</head>
-<body>
-    
+  </head>
+  <body>
     <div class="contenedor">
-        <header class="header">
-            <div class="header_triangulo"></div>
-            <h2>Sushi itto</h2>
-            <div class="menu-title"><h1>Menú</h1></div>
-            <div class="menu-container">
-        <div class="menu-icon" onclick="toggleMenu()">☰</div>
-        <div class="menu-options" id="menu">
+      <header class="header">
+        <div class="header_triangulo"></div>
+        <h2>Sushi itto</h2>
+        <div class="menu-title"><h1>Menú</h1></div>
+        <div class="menu-container">
+          <div class="menu-icon" onclick="toggleMenu()">☰</div>
+          <div class="menu-options" id="menu">
             <div class="close-menu" onclick="toggleMenu()">✖</div>
             <a href="index-proyecto.html">🍣 Home</a>
             <a href="nosotros.html">🏠 Nosotros</a>
             <a href="Reservaciones.html">🏬 Reservaciones</a>
             <a href="ordenar.html">📦 Ordena Ahora</a>
             <a href="ayuda.html">🏬 Ayuda</a>
+            <p class="bchatbot" onclick="MostrarChat()">🤖 chatbot</p>
+            <iframe
+              class="chatbot"
+              id="chatbot"
+              src="https://landbot.online/v3/H-2927712-CI17VIUPHAWFT3MN/index.html"
+            ></iframe>
+          </div>
         </div>
-    </div>
-        </header>
+      </header>
 
-        <div class="subtitulo"><h2>Platillos y especialidades</h2></div>
-            <div class="iframe">
-                <iframe src="https://www.sushiittomx.com/wp-content/uploads/MENU-Suhiito.pdf" title="platillos"></iframe>
-                <iframe src="https://menu-precios.com/sushi-itto-menu/" title="platillos"></iframe>
+      <div class="subtitulo"><h2>Platillos y especialidades</h2></div>
+      <div class="iframe">
+        <iframe
+          src="https://www.sushiittomx.com/wp-content/uploads/MENU-Suhiito.pdf"
+          title="platillos"
+        ></iframe>
+        <iframe
+          src="https://menu-precios.com/sushi-itto-menu/"
+          title="platillos"
+        ></iframe>
+      </div>
+      <div class="subtitulo"><h2>Promociones</h2></div>
+      <div class="contenido">
+        <div class="texto1">
+          <section class="carrusel">
+            <div class="carrusel_nav">
+              <ul>
+                <li><img src="img/promo1.png" /></li>
+                <li><img src="img/promo2.png" /></li>
+                <li><img src="img/promo3.png" /></li>
+                <li><img src="img/promo4.png" /></li>
+                <li><img src="img/promo5.png" /></li>
+              </ul>
             </div>
-        <div class="subtitulo"><h2>Promociones</h2></div>
-        <div class="contenido">
-            <div class="texto1">
-                <section class="carrusel">
-                    <div  class="carrusel_nav">
-                        <ul>
-                            <li><img src="img/promo1.png"></li>
-                            <li><img src="img/promo2.png"></li>
-                            <li><img src="img/promo3.png"></li>
-                            <li><img src="img/promo4.png"></li>
-                            <li><img src="img/promo5.png"></li>
-                        </ul>
-                    </div>
-                </section>
-            </div>
-            <div class="texto1">
-                <iframe style="width: 100%; height: 100%;" src="https://www.youtube.com/embed/F9NlmeJSdHg" frameborder="0" allowfullscreen></iframe>            
-            </div>
+          </section>
         </div>
-        <div class="subtitulo"><h2>ESPECIALES</h2></div>
-        <section class="carrusel_2">
-                    <div class="carrusel_nav_2">
-                        <ul style="width: 100%; height: 100%;">
-                            <li><img src="https://theparkslp.com/assets/images/stores/35/sushiitto-02.jpg"></li>
-                            <li><img src="https://theparkslp.com/assets/images/stores/35/sushiitto-03.jpg"></li>
-                            <li><img src="https://menu-precios.com/wp-content/uploads/2024/10/Sushi-Itto-Menu-1024x1024.jpeg"></li>
-                            <li><img src="https://menu-precios.com/wp-content/uploads/2024/10/Sushi-Itto-Ramen-y-Noodles-Menu.webp"></li>
-                            <li><img src="https://menu-precios.com/wp-content/uploads/2024/10/Sushi-Itto-Rollos-Menu.webp"></li>
-                        </ul>
-                    </div>
-                </section>
-  <footer>
-        <br>
-        <hr>
-        <h3>© 2025 Sushi Itto. Todos los Derechos Reservados</h3><br/>
-        <h3>Pagina web desarrollada para la materia de Programación Web I.</h3><br/>
+        <div class="texto1">
+          <iframe
+            style="width: 100%; height: 100%"
+            src="https://www.youtube.com/embed/F9NlmeJSdHg"
+            frameborder="0"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+      <div class="subtitulo"><h2>ESPECIALES</h2></div>
+      <section class="carrusel_2">
+        <div class="carrusel_nav_2">
+          <ul style="width: 100%; height: 100%">
+            <li>
+              <img
+                src="https://theparkslp.com/assets/images/stores/35/sushiitto-02.jpg"
+              />
+            </li>
+            <li>
+              <img
+                src="https://theparkslp.com/assets/images/stores/35/sushiitto-03.jpg"
+              />
+            </li>
+            <li>
+              <img
+                src="https://menu-precios.com/wp-content/uploads/2024/10/Sushi-Itto-Menu-1024x1024.jpeg"
+              />
+            </li>
+            <li>
+              <img
+                src="https://menu-precios.com/wp-content/uploads/2024/10/Sushi-Itto-Ramen-y-Noodles-Menu.webp"
+              />
+            </li>
+            <li>
+              <img
+                src="https://menu-precios.com/wp-content/uploads/2024/10/Sushi-Itto-Rollos-Menu.webp"
+              />
+            </li>
+          </ul>
+        </div>
+      </section>
+      <footer>
+        <br />
+        <hr />
+        <h3>© 2025 Sushi Itto. Todos los Derechos Reservados</h3>
+        <br />
+        <h3>Pagina web desarrollada para la materia de Programación Web I.</h3>
+        <br />
         <h3>Primavera 2025. Universidad Politécnica de San Luis Potosí</h3>
 
         <div class="redes">
-            <a href="https://www.tiktok.com/@sushiittomx" target="_BLANK"><img src="img/tik-tok.png"></a> 
-            <a href="https://www.youtube.com/@sushiitto_oficial" target="_BLANK"><img src="img/youtube.png"></a>
-            <a href="https://www.instagram.com/sushiittooficial/" target="_BLANK"><img src="img/instagram.png"></a> 
-            <a href="https://www.facebook.com/SushiIttoOficial" target="_BLANK"><img src="img/facebook.png"></a> 
+          <a href="https://www.tiktok.com/@sushiittomx" target="_BLANK"
+            ><img src="img/tik-tok.png"
+          /></a>
+          <a href="https://www.youtube.com/@sushiitto_oficial" target="_BLANK"
+            ><img src="img/youtube.png"
+          /></a>
+          <a href="https://www.instagram.com/sushiittooficial/" target="_BLANK"
+            ><img src="img/instagram.png"
+          /></a>
+          <a href="https://www.facebook.com/SushiIttoOficial" target="_BLANK"
+            ><img src="img/facebook.png"
+          /></a>
         </div>
-    </footer>
+      </footer>
     </div>
 
     <script>
-        function toggleMenu() {
-            var menu = document.getElementById("menu");
-            menu.style.display = (menu.style.display === "block") ? "none" : "block";
-        }
+      function toggleMenu() {
+        var menu = document.getElementById("menu");
+        menu.style.display = menu.style.display === "block" ? "none" : "block";
+      }
     </script>
-
-</body>
+    <script src="chat.js"></script>
+  </body>
 </html>

@@ -1,84 +1,86 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="reservaciones_estilos.css">
-    <link rel="stylesheet" type="text/css" href="style_texto.css">
-    <link rel="stylesheet" type="text/css" href="style_encabezado.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="reservaciones_estilos.css" />
+    <link rel="stylesheet" type="text/css" href="style_texto.css" />
+    <link rel="stylesheet" type="text/css" href="style_encabezado.css" />
+    <link rel="stylesheet" type="text/css" href="chat.css" />
     <title>Menú</title>
-
-</head>
-<body>
+  </head>
+  <body>
     <div class="contenedor">
-        <header class="header">
-            <div class="header_triangulo"></div>
-            <h2>Sushi itto</h2>
-            <div class="menu-title"><h1>Reservaciones</h1></div>
-            <div class="menu-container">
-        <div class="menu-icon" onclick="toggleMenu()">☰</div>
-        <div class="menu-options" id="menu">
+      <header class="header">
+        <div class="header_triangulo"></div>
+        <h2>Sushi itto</h2>
+        <div class="menu-title"><h1>Reservaciones</h1></div>
+        <div class="menu-container">
+          <div class="menu-icon" onclick="toggleMenu()">☰</div>
+          <div class="menu-options" id="menu">
             <div class="close-menu" onclick="toggleMenu()">✖</div>
             <a href="index-proyecto.html">🍣 Home</a>
             <a href="nosotros.html">🏠 Nosotros</a>
             <a href="menu.html">🥢 Menú</a>
             <a href="ordenar.html">📦 Ordena Ahora</a>
             <a href="ayuda.html">🏬 Ayuda</a>
+            <p class="bchatbot" onclick="MostrarChat()">🤖 chatbot</p>
+            <iframe
+              class="chatbot"
+              id="chatbot"
+              src="https://landbot.online/v3/H-2927712-CI17VIUPHAWFT3MN/index.html"
+            ></iframe>
+          </div>
         </div>
-    </div>
-        </header>
-
-        <div class="subtitulo">
+      </header>
+     <div class="subtitulo">
             <h2>¡Reserva un increible servicio en SUSHI - ITTO!</h2></div>
         <div class="texto1">
-            <div class="bottonForm" id="bottonForm">
-                <a href="formularioReservacion.html"><p>Reservar</p></a>
-            </div>
-                <section class="carrusel">
-                    <div style="width: 300%;" class="carrusel_nav">
-                        <ul>
-                            <li><img src="https://d3jky06km58rdx.cloudfront.net/assets/images/store/san-salvador/N96t60GvSKGTUCZtiJOm1V0o51kL5Nk0grjhD6s6.webp"></li>
-                            <li><img src="https://cdn-3.expansion.mx/dims4/default/e983ff7/2147483647/strip/true/crop/649x472+0+0/resize/1200x873!/format/webp/quality/60/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F8c%2F8c2e262183d946755f736d02378ca53e%2Fsushi-itto.jpg"></li>
-                            <li><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7LfjRi1oZ0DGT66OEfTJonFUFxPFmyKm-XxdJSH38yXoUoz144yaBeL3GKW071jPrEXI&usqp=CAU"></li>
-                            <li><img src="https://media.istockphoto.com/id/1008488072/es/foto/un-set-de-sushi-rollos-sobre-una-mesa-en-un-restaurante-un-grupo-de-amigos-comiendo-sushi.jpg?s=612x612&w=0&k=20&c=L0HTVQqTl0KNlQSqEA_uCI-OkQIf4aU_7U-UgC3ioGQ="></li>
-                            <li><img src="https://media.istockphoto.com/id/1136123755/es/foto/comer-sushi-en-familia.jpg?s=612x612&w=0&k=20&c=5-EBId1EzadES90-Oxm37Gi3dj6KEoAK1hMVf73QbvA="></li>
-                        </ul>
-                    </div>
-                </section>
-            </div>
-            <div class="enunciado">
-                <p><strong>¡Prepárate para una experiencia de sabor única! Reserva ahora en nuestro restaurante de sushi y déjate sorprender por la frescura, el arte y la pasión en cada rollo. ¡Tu mesa te espera! </strong></p>
-            </div>
-        </div>
-  
-    <div class="formulario" id="formulario">
-       <div class="contentFormulario">
-            <h2>hola</h2>
-       </div>
+            <section class="galeria">
+     <div class="imagen" style="background-image: url('https://d3jky06km58rdx.cloudfront.net/assets/images/store/san-salvador/N96t60GvSKGTUCZtiJOm1V0o51kL5Nk0grjhD6s6.webp');"></div>
+    <div class="imagen" style="background-image: url('https://cdn-3.expansion.mx/dims4/default/e983ff7/2147483647/strip/true/crop/649x472+0+0/resize/1200x873!/format/webp/quality/60/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F8c%2F8c2e262183d946755f736d02378ca53e%2Fsushi-itto.jpg');"></div>
+    <div class="imagen" style="background-image: url('https://media.istockphoto.com/id/1008488072/es/foto/un-set-de-sushi-rollos-sobre-una-mesa-en-un-restaurante-un-grupo-de-amigos-comiendo-sushi.jpg?s=612x612&w=0&k=20&c=L0HTVQqTl0KNlQSqEA_uCI-OkQIf4aU_7U-UgC3ioGQ=');"></div>
+    <div class="imagen" style="background-image: url('https://media.istockphoto.com/id/1136123755/es/foto/comer-sushi-en-familia.jpg?s=612x612&w=0&k=20&c=5-EBId1EzadES90-Oxm37Gi3dj6KEoAK1hMVf73QbvA=');"></div>
+    
+    <div class="boton-centro" >
+      <a href="formularioReservacion.html">
+    <button>Reservar ahora</button>
     </div>
+  </section>
+
+  <div class="frase"><h3>¡Preparate para una experiencia de sabor única y dejate sorprender en cada uno de nuestros platillos!</h3></div>
 
     <footer>
-        <br>
-        <hr>
-        <h3>© 2025 Sushi Itto. Todos los Derechos Reservados</h3><br/>
-        <h3>Pagina web desarrollada para la materia de Programación Web I.</h3><br/>
-        <h3>Primavera 2025. Universidad Politécnica de San Luis Potosí</h3>
+      <br />
+      <hr />
+      <h3>© 2025 Sushi Itto. Todos los Derechos Reservados</h3>
+      <br />
+      <h3>Pagina web desarrollada para la materia de Programación Web I.</h3>
+      <br />
+      <h3>Primavera 2025. Universidad Politécnica de San Luis Potosí</h3>
 
-        <div class="redes">
-            <a href="https://www.tiktok.com/@sushiittomx" target="_BLANK"><img src="img/tik-tok.png"></a> 
-            <a href="https://www.youtube.com/@sushiitto_oficial" target="_BLANK"><img src="img/youtube.png"></a>
-            <a href="https://www.instagram.com/sushiittooficial/" target="_BLANK"><img src="img/instagram.png"></a> 
-            <a href="https://www.facebook.com/SushiIttoOficial" target="_BLANK"><img src="img/facebook.png"></a> 
-        </div>
+      <div class="redes">
+        <a href="https://www.tiktok.com/@sushiittomx" target="_BLANK"
+          ><img src="img/tik-tok.png"
+        /></a>
+        <a href="https://www.youtube.com/@sushiitto_oficial" target="_BLANK"
+          ><img src="img/youtube.png"
+        /></a>
+        <a href="https://www.instagram.com/sushiittooficial/" target="_BLANK"
+          ><img src="img/instagram.png"
+        /></a>
+        <a href="https://www.facebook.com/SushiIttoOficial" target="_BLANK"
+          ><img src="img/facebook.png"
+        /></a>
+      </div>
     </footer>
 
-
     <script>
-        function toggleMenu() {
-            var menu = document.getElementById("menu");
-            menu.style.display = (menu.style.display === "block") ? "none" : "block";
-        }
+      function toggleMenu() {
+        var menu = document.getElementById("menu");
+        menu.style.display = menu.style.display === "block" ? "none" : "block";
+      }
     </script>
-
-</body>
+    <script src="chat.js"></script>
+  </body>
 </html>

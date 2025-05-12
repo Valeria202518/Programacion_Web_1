@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="ordenaya.css" />
     <link rel="stylesheet" type="text/css" href="style_texto.css" />
+    <link rel="stylesheet" type="text/css" href="chat.css" />
     <title>Ordena ahora</title>
     <style>
       .contenido-doble {
@@ -34,6 +35,12 @@
             <a href="menu.html">🥢 Menú</a>
             <a href="Reservaciones.html">🏬 Reservaciones</a>
             <a href="ayuda.html">🔥 Ayuda</a>
+            <p class="bchatbot" onclick="MostrarChat()">🤖 chatbot</p>
+            <iframe
+              class="chatbot"
+              id="chatbot"
+              src="https://landbot.online/v3/H-2927712-CI17VIUPHAWFT3MN/index.html"
+            ></iframe>
           </div>
         </div>
       </header>
@@ -85,5 +92,6 @@
         menu.style.display = menu.style.display === "block" ? "none" : "block";
       }
     </script>
+    <script src="chat.js"></script>
   </body>
 </html>

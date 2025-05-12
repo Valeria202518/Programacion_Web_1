@@ -225,4 +225,61 @@ h3{
 
 /*Fin de pie de pagina*/
 
+#chatbot {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 300px;
+  height: 400px;
+  background-color: #fff;
+  border: 2px solid #e91e63;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  display: flex;
+  flex-direction: column;
+  font-family: Arial;
+  z-index: 999;
+}
 
+#chatbot-header {
+  background-color: #e91e63;
+  color: white;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#chatlog {
+  flex: 1;
+  padding: 10px;
+  overflow-y: auto;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+
+#chatInput {
+  display: flex;
+  border-top: 1px solid #ccc;
+}
+
+#chatInput input {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  outline: none;
+}
+
+#chatInput button {
+  background-color: #e91e63;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.frase {
+      background-color: #d687f8;
+      padding: 20px;
+      text-align: center;
+      font-size: 50px;
+  }

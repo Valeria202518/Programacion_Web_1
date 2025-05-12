@@ -78,6 +78,7 @@ input[type=password]{
     background-color: lightgray;
     color: black;
   }
+
   .estrellas {
   direction: rtl;
   unicode-bidi: bidi-override;

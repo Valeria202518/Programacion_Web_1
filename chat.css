@@ -1,0 +1,25 @@
+ .bchatbot{
+            display: block;
+            padding: 15px;
+            font-size: 18px;
+            text-decoration: none;
+            color: white;
+        }
+.bchatbot:hover {
+            background: #f5175e;
+        }
+
+.chatbot{
+	display: none;
+	width: 100%;
+	height: 50%;
+	border-radius: 20px;
+}
+
+.bchatbot{
+	border: none;
+	background-color:#871eb5;
+	color: white;
+	cursor: pointer;
+}
+

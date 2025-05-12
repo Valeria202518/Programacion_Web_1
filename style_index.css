@@ -408,14 +408,14 @@ h3{
             padding: 2.5em .2em;
             box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
         }
-        .menu-options a {
+        .menu-options a{
             display: block;
             padding: 15px;
             font-size: 18px;
             text-decoration: none;
             color: white;
         }
-        .menu-options a:hover {
+        .menu-options a:hover{
             background: #f5175e;
         }
         .close-menu {

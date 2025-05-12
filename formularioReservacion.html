@@ -1,107 +1,181 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="styleFormularioReservacion.css">
-    <link rel="stylesheet" type="text/css" href="style_texto.css">
-    <link rel="stylesheet" type="text/css" href="style_encabezado.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="styleFormularioReservacion.css"
+    />
+    <link rel="stylesheet" type="text/css" href="style_texto.css" />
+    <link rel="stylesheet" type="text/css" href="style_encabezado.css" />
+    <link rel="stylesheet" type="text/css" href="chat.css" />
     <title>Formulario</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="contenedor">
-        <header class="header">
-                <div class="header_triangulo"></div>
-                <h2>Sushi itto</h2>
-                <div class="menu-title">Reservaciones</div>
-                <div class="menu-container">
-            <div class="menu-icon" onclick="toggleMenu()">☰</div>
-            <div class="menu-options" id="menu">
-                <div class="close-menu" onclick="toggleMenu()">✖</div>
-                <a href="index-proyecto.html">🍣 Home</a>
-                <a href="nosotros.html">🏠 Nosotros</a>
-                <a href="menu.html">🥢 Menú</a>
-                <a href="ayuda.html">🏬 Ayuda</a>
-            </div>
-            </div>
-        </header>
+      <header class="header">
+        <div class="header_triangulo"></div>
+        <h2>Sushi itto</h2>
+        <div class="menu-title">Reservaciones</div>
+        <div class="menu-container">
+          <div class="menu-icon" onclick="toggleMenu()">☰</div>
+          <div class="menu-options" id="menu">
+            <div class="close-menu" onclick="toggleMenu()">✖</div>
+            <a href="index-proyecto.html">🍣 Home</a>
+            <a href="nosotros.html">🏠 Nosotros</a>
+            <a href="menu.html">🥢 Menú</a>
+            <a href="ayuda.html">🏬 Ayuda</a>
+            <p class="bchatbot" onclick="MostrarChat()">🤖 chatbot</p>
+            <iframe
+              class="chatbot"
+              id="chatbot"
+              src="https://landbot.online/v3/H-2927712-CI17VIUPHAWFT3MN/index.html"
+            ></iframe>
+          </div>
+        </div>
+      </header>
     </div>
 
     <div class="contenidoForm">
-        <div class="parte_1">
+      <div class="parte_1">
         <center>
-            <img src="img/map.png" id="imgForm">
-            <form class="tienda">
-            <p> Selecciona la tienda</p>
-                <select class="seleccionTienda">
-                    <option>Sushiitto The Park</option>
-                    <option>Sushiitto Covalia</option>
-                </select>
-            </form>
+          <img src="img/map.png" id="imgForm" />
+          <form class="tienda">
+            <p>Selecciona la tienda</p>
+            <select class="seleccionTienda">
+              <option>Sushiitto The Park</option>
+              <option>Sushiitto Covalia</option>
+            </select>
+          </form>
         </center>
-        </div>
+      </div>
 
-        <div class="parte_2">
-            <div class="input-container">
-                <label for="numero" id="numero">Cant personas:</label>
-                <input type="number" id="numero" name="numero" min="2" max="15" step="1" value="2"/>
-            </div>
+      <div class="parte_2">
+        <div class="input-container">
+          <label for="numero" id="numero">Cant personas:</label>
+          <input
+            type="number"
+            id="numero"
+            name="numero"
+            min="2"
+            max="15"
+            step="1"
+            value="2"
+          />
         </div>
+      </div>
     </div>
 
     <div class="parte_3">
-        <h2>Registro</h2>
-        <hr>
-        <div class="contenido">
-            <section>
-                <form>
-                    <legend>Datos</legend>
-                    <label for="fecha">Selecciona una fecha:</label>
-                        <input type="date" id="fecha" name="fecha" min="2025-04-24" max="2025-12-31" required autofocus><br>
-                    <label for="name">Escribe tu nombre:</label>
-                        <input type="text" maxlength="25" placeholder="Nombre" id="nombre" required autofocus><br>
-                    <label for="hora">Selecciona una hora (entre 10:00am y 16:00pm):</label>
-                        <input type="time" id="hora" name="hora" min="10:00" max="18:00" required>
-                    <br><label for="telefono">Número de teléfono:</label>
-                        <input type="tel" id="telefono" name="telefono" placeholder="Ej. 4441234567" pattern="[0-9]{10}" required><br>
-                    <label for="deposito">Monto del depósito:</label>
-                        <input  type="number" id="deposito" name="deposito" min="50" max="1000" step="50" placeholder="Ej. 500" required value="500">
-                    <input id="enviar" type="submit" value="Enviar">
-                </form>
-            </section>
-        </div>
+      <h2>Registro</h2>
+      <hr />
+      <div class="contenido">
+        <section>
+          <form>
+            <legend>Datos</legend>
+            <label for="fecha">Selecciona una fecha:</label>
+            <input
+              type="date"
+              id="fecha"
+              name="fecha"
+              min="2025-04-24"
+              max="2025-12-31"
+              required
+              autofocus
+            /><br />
+            <label for="name">Escribe tu nombre:</label>
+            <input
+              type="text"
+              maxlength="25"
+              placeholder="Nombre"
+              id="nombre"
+              required
+              autofocus
+            /><br />
+            <label for="hora"
+              >Selecciona una hora (entre 10:00am y 16:00pm):</label
+            >
+            <input
+              type="time"
+              id="hora"
+              name="hora"
+              min="10:00"
+              max="18:00"
+              required
+            />
+            <br /><label for="telefono">Número de teléfono:</label>
+            <input
+              type="tel"
+              id="telefono"
+              name="telefono"
+              placeholder="Ej. 4441234567"
+              pattern="[0-9]{10}"
+              required
+            /><br />
+            <label for="deposito">Monto del depósito:</label>
+            <input
+              type="number"
+              id="deposito"
+              name="deposito"
+              min="50"
+              max="1000"
+              step="50"
+              placeholder="Ej. 500"
+              required
+              value="500"
+            />
+            <input id="enviar" type="submit" value="Enviar" />
+          </form>
+        </section>
+      </div>
     </div>
 
     <div class="parte_4">
-        <h2>Comentarios</h2>
-        <hr>
-        <div class="contenido" id="comentario">
-            <label for="comentarios">Comentarios:</label><br><br>
-            <textarea id="comentarios" name="comentarios"  rows="10" cols="40" placeholder="Escribe tus comentarios aquí..."></textarea>
-        </div>
+      <h2>Comentarios</h2>
+      <hr />
+      <div class="contenido" id="comentario">
+        <label for="comentarios">Comentarios:</label><br /><br />
+        <textarea
+          id="comentarios"
+          name="comentarios"
+          rows="10"
+          cols="40"
+          placeholder="Escribe tus comentarios aquí..."
+        ></textarea>
+      </div>
     </div>
 
-
     <footer>
-        <div class="regresar">
-            <a href="Reservaciones.html">Regresar</a>
-        </div>
-        <br>
-        <hr>
-        <h3>© 2025 Sushi Itto. Todos los Derechos Reservados</h3><br/>
-        <h3>Pagina web desarrollada para la materia de Programación Web I.</h3><br/>
-        <h3>Primabera 2025. Universidad Politécnica de San Luis Potosí</h3>
+      <div class="regresar">
+        <a href="Reservaciones.html">Regresar</a>
+      </div>
+      <br />
+      <hr />
+      <h3>© 2025 Sushi Itto. Todos los Derechos Reservados</h3>
+      <br />
+      <h3>Pagina web desarrollada para la materia de Programación Web I.</h3>
+      <br />
+      <h3>Primabera 2025. Universidad Politécnica de San Luis Potosí</h3>
 
-        <div class="redes">
-            <a href="https://www.tiktok.com/@sushiittomx" target="_BLANK"><img src="img/tik-tok.png"></a> 
-            <a href="https://www.youtube.com/@sushiitto_oficial" target="_BLANK"><img src="img/youtube.png"></a>
-            <a href="https://www.instagram.com/sushiittooficial/" target="_BLANK"><img src="img/instagram.png"></a> 
-            <a href="https://www.facebook.com/SushiIttoOficial" target="_BLANK"><img src="img/facebook.png"></a> 
-        </div>
+      <div class="redes">
+        <a href="https://www.tiktok.com/@sushiittomx" target="_BLANK"
+          ><img src="img/tik-tok.png"
+        /></a>
+        <a href="https://www.youtube.com/@sushiitto_oficial" target="_BLANK"
+          ><img src="img/youtube.png"
+        /></a>
+        <a href="https://www.instagram.com/sushiittooficial/" target="_BLANK"
+          ><img src="img/instagram.png"
+        /></a>
+        <a href="https://www.facebook.com/SushiIttoOficial" target="_BLANK"
+          ><img src="img/facebook.png"
+        /></a>
+      </div>
     </footer>
 
-
     <script src="01-formulario.js"></script>
-
-</body>
+    <script src="chat.js"></script>
+  </body>
 </html>
