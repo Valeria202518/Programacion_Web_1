@@ -10,38 +10,46 @@ a{
 	color: black;
 }
 
+.contenedor{
+	background-color: none;
+}
+
+.header{
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: auto;
+	border-radius:  0 0 200px 0;
+	background-color: none;
+}
 
 /*Carrusel de imagenes*/
 
 .carrusel{
 	display: flex;
 	justify-content: center;
-	width: 100vw;
-	height: 40vh;
+	align-items: center;
+	width: 100%;
+	height:100%;
 }
-
  .carrusel_nav{
 	height: auto;
 	overflow: hidden;
-	margin: 10px;
 }
 
  .carrusel_nav ul{
 	display: flex;
-	width: 400%;
+	width: 100%;
 	animation:slide 20s infinite alternate ease-in-out;
 }
-
-
  .carrusel_nav ul li{
+	width: 100%;
 	list-style: none;
 	position: relative;
-	margin: auto 0;
 }
-
-
  .carrusel_nav ul li img{
-	width: 40vw;
+	width: 100vw;
 	height: 100%;
 }
 
@@ -98,6 +106,7 @@ a{
 }
 
 .promo-img{
+	z-index: 1;
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: space-around;
@@ -121,10 +130,10 @@ a{
 }
 
 .app-fondo{
+	position: relative;
 	width: 80%;
 	height: 80%;
 	border-radius: 40em;
-	background-color:#8A76FF;
 	opacity: .8;
 }
 
@@ -152,7 +161,6 @@ a{
 	flex-flow: column;
 	max-width: 250px;
 }
-
 
 .iconos{
 	width: 100%;
@@ -304,13 +312,17 @@ a{
 
 .contenido{
 	height: auto;
-	position: absolute;
-	right: 22%;
+	position:relative;
+	right: 10%;
 	top: 10%;
 	display: flex;
 	flex-flow: column;
 	align-items: center;
 	justify-content: center;
+	border-radius: 200px;
+	padding: 3%;
+	background-color: #8A76FF;
+	width: 50%;
 }
 
 .contenido h1{
@@ -330,7 +342,7 @@ a{
 }
 
 .ordenar img{
-	width: 9%;
+	width: 10%;
 }
 
 .ordenar-content{
@@ -347,16 +359,14 @@ a{
 
 .ordenar-img{
 	padding: 0 20%;
-	position: absolute;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	top: 80%;
 }
 
 .ordenar-img img{
 	margin: 0 0 0 20%;
-	width: 80%;
+	width: 100%;
 }
 
 hr{
@@ -383,7 +393,7 @@ h3{
  .menu-container {
             position: relative;
             display: inline-block;
-            z-index: 1;
+            z-index: 2;
         }
         .menu-icon {
             cursor: pointer;
@@ -393,10 +403,11 @@ h3{
             padding: 10px;
             border-radius: 5px;
             position: absolute;
-            top: -50px;
+            top: 5vh;
             right: 20px;
         }
         .menu-options {
+			z-index: 2;
             display: none;
             position: fixed;
             top: 0;
@@ -428,12 +439,85 @@ h3{
             cursor: pointer;
         }
 
-@media (max-width:1400px) {
+.contenido2{
+	height: auto;
+	position:relative;
+	top: 15vh;
+	margin-left: 10%;
+	display: none;
+	flex-flow: column;
+	align-items: center;
+	justify-content: center;
+	border-radius: 100px;
+	padding: 10%;
+	background-color: #8A76FF;
+	width: 50%;
+}
+
+@media (max-width:749px) {
+	.app{
+		flex-flow: column;
+	}
+
 	.contenido{
 		display: none;
 	}
 
-	.app-fondo{
-		background-color: white;
+	.contenido2{
+		width: 80%;
+		display: block;
+	}
+
+	.ordenar-img{
+		padding: none;
+		width:100%;
+		display: block;
+		justify-content: space-between;
+	}
+
+	.ordenar-img img{
+		width: 20vw;
+	}
+
+	footer{
+		margin-top: 20vh;
 	}
 }
+
+.linksApp{
+	display: flex;
+}
+
+.leyenda{
+	display:flex;
+	align-items: center;
+	justify-content: center;
+	position: absolute;
+	width: 25%;
+	height: auto;
+	z-index: 2;
+	bottom: 10%;
+	left: 40%;
+	border-radius: 20px;
+	background-color:#f5175e;
+	font-size: 1em;
+}
+
+i{
+	margin-left:20%;
+}
+
+a{
+	display: flex;
+	justify-content: center;
+	color: #FFF;
+}
+
+#ordenar{
+	color: #333;
+}
+
+#botOrden{
+	width: 80%;
+}
+

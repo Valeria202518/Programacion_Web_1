@@ -3,8 +3,8 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="style_index.css">
 	<link rel="stylesheet" type="text/css" href="style_encabezado.css">
+	<link rel="stylesheet" type="text/css" href="style_index.css">
 	<link rel="stylesheet" type="text/css" href="style_texto.css">
 	<link rel="stylesheet" type="text/css" href="chat.css" />
 	<title>Sushiitto</title>
@@ -12,44 +12,59 @@
 <body>
 
 	<div class="contenedor">
-        <header class="header">
-            <div class="header_triangulo"></div>
-            <h2>Sushi itto</h2>
-            <div class="menu-title"><h1>Inicio</h1></div>
-            <div class="menu-container">
-                <div class="menu-icon" onclick="toggleMenu()">☰</div>
-                <div class="menu-options" id="menu">
-					<div class="close-menu" onclick="toggleMenu()">✖</div>
-					<a href="menu.html">🥢 Menú</a>
-					<a href="nosotros.html">🏠 Nosotros</a>
-					<a href="Reservaciones.html">🏬 Reservaciones</a>
-					<a href="ordenar.html">📦 Ordena Ahora</a>
-					<a href="ayuda.html">🏬 Ayuda</a>
-					<p class="bchatbot" onclick="MostrarChat()">🤖 chatbot</p>
-					<iframe class="chatbot" id="chatbot" src="https://landbot.online/v3/H-2927712-CI17VIUPHAWFT3MN/index.html"></iframe>
-				</div>
-			</div>
-		</header>
-	</div>
-
-	<section class="carrusel">
-		<div style="order: 1; width: 40vw; height: 30vh;" class="carrusel_nav">
+        <header class="header">          
+			<section class="carrusel" style="width: 100%;">
+		<div style="order: 1; width: 100%; height: auto;" class="carrusel_nav">
 			<ul>
 				<li>
 					<img src="img/Cover-rollo.webp">
+					<div class="leyenda">
+						<a href="menu.html">Menu<i class="fa-solid fa-arrow-right"></i>
+						</a>
+					</div>
 				</li>
 				<li>
-					<img src="img/promo1.jpg">
+					<img src="https://sushi-itto.com.mx/wp-content/uploads/2024/12/SI_BANNER_WEB_NUEVA_HJ_APPS_1920x1080_210225-1.png">
+					<div class="leyenda">
+						<a href="menu.html">Promociones<i class="fa-solid fa-arrow-right"></i>
+						</a>
+					</div>
 				</li>
 				<li>
 					<img src="img/Pedidos.png">
+					<div class="leyenda">
+						<a href="nosotros.html">Contactanos<i class="fa-solid fa-arrow-right"></i>
+						</a>
+					</div>
 				</li>
 				<li>
 					<img src="img/reservaciones.jpg">
+					<div class="leyenda">
+						<a href="formularioReservacion.html" id="botOrden">Ordena ahora :)<i class="fa-solid fa-arrow-right"></i>
+						</a>
+					</div>
 				</li>
 			</ul>
 		</div>
-	</section>
+		</section>
+		 <div class="menu-icon" onclick="toggleMenu()">☰</div>
+          <div class="menu-options" id="menu">
+            <div class="close-menu" onclick="toggleMenu()">✖</div>
+            <a href="menu.html">🥢 Menú</a>
+			<a href="nosotros.html">🏠 Nosotros</a>
+            <a href="Reservaciones.html">🏬 Reservaciones</a>
+            <a href="ordenar.html">📦 Ordena Ahora</a>
+            <a href="ayuda.html">🏬 Ayuda</a>
+            <p class="bchatbot" onclick="MostrarChat()">🤖 chatbot</p>
+            <iframe
+              class="chatbot"
+              id="chatbot"
+              src="https://landbot.online/v3/H-2927712-CI17VIUPHAWFT3MN/index.html"
+            ></iframe>
+	</header>
+	</div>
+
+
 
 	<section class="promo">
 		<article class="promo-titulo">
@@ -161,10 +176,12 @@
 					<h1>Tu sushi favorito</h1>
 
 					<div class="ordenar">
-						<div class="ordenar-content">
-							<p>ordena aquí</p>
-							<img src="img/flecha.png">
-						</div>
+						<a href="formularioReservacion.html" id="ordenar">
+							<div class="ordenar-content">
+								ordena aquí
+								<img src="img/flecha.png">
+							</div>
+						</a>
 					</div>
 
 					<div class="ordenar-img" >
@@ -172,7 +189,22 @@
 						<a href="https://apps.apple.com/mx/app/sushi-itto-mx/id1596342830"><img src="img/applestore.png"></a> 
 					</div>
 				</div>
-	</section>
+		</section>
+		<div class="contenido2">
+					<h1>Tu sushi favorito</h1>
+			<div class="linksApp">
+					<div class="ordenar">
+						<div class="ordenar-content">
+							<p>ordena aquí</p>
+						</div>
+					</div>
+					<div class="ordenar-img" >
+							<a href="https://play.google.com/store/apps/details?id=com.delivery.sushitoDelivery&hl=es"><img src="img/playstore.png"></a> 
+							<a href="https://apps.apple.com/mx/app/sushi-itto-mx/id1596342830"><img src="img/applestore.png"></a> 
+						</div>
+			</div>
+				
+		</div>
 
 	<footer>
         <br>
@@ -197,5 +229,6 @@
 	    }
 	</script>
 		<script src="chat.js"></script>
+		<script src="https://kit.fontawesome.com/0283660982.js" crossorigin="anonymous"></script>
 </body>
 </html>
